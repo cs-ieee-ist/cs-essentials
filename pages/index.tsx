@@ -25,7 +25,7 @@ export default function Home({
         <h4 className={utilStyles.headingMd}>
           A repository that helps students, from any area, learn and practice
           with CS-related tools. To contribute to the project go to{" "}
-          <a href="https://github.com/cs-ieee-ist/cs-ieee-ist.github.io">
+          <a href="https://github.com/cs-ieee-ist/cs-essentials">
             GitHub
           </a>
         </h4>
