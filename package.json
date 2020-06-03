@@ -6,7 +6,8 @@
     "dev": "next dev -p 1234",
     "build": "next build",
     "export": "next build && next export",
-    "start": "next start"
+    "start": "next start",
+    "deploy": "rm -rf node_modules/.cache && next build && next export && touch out/.nojekyll && git add -f out/ && git commit -m \"Deploy website to gh-pages\" && git subtree push --prefix out origin gh-pages"
   },
   "dependencies": {
     "date-fns": "^2.14.0",

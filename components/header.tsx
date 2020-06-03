@@ -14,11 +14,11 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerLeft}>
-				<Link href="/">
+				<Link href="/" as={`${process.env.BACKEND_URL}/`}>
 					<a className={styles.headerLogoLink}>
 						<img
 							className={styles.headerLogo}
-							src="/images/logo-cs.png"
+							src={`${process.env.BACKEND_URL}/images/logo-cs.png`}
 							alt="logo"
 						></img>
 					</a>
@@ -27,11 +27,11 @@ export default function Header() {
 			<HeaderSearch />
 			<div className={styles.headerRight}>
 				<span className={`${styles.headerIcon} ${styles.headerSearchIcon}`} onClick={onSearchIconClick}>
-					<img src="/icons/search.svg" alt="search-icon" />
+					<img src={`${process.env.BACKEND_URL}/icons/search.svg`} alt="search-icon" />
 				</span>
-				<Link href="/about">
+				<Link href={`${process.env.BACKEND_URL}/about`}>
 					<a className={styles.headerIcon}>
-						<img src="/icons/information.svg" alt="info-icon" />
+						<img src={`${process.env.BACKEND_URL}/icons/information.svg`} alt="info-icon" />
 					</a>
 				</Link>
 			</div>

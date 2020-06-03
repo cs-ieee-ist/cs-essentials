@@ -13,9 +13,9 @@ export default function HeaderSearch() {
   return (
     <div className={styles.headerSearch}>
       <input placeholder="Search" onChange={inputChange}></input>
-      <Link href={{ pathname: "/search", query: { query: query } }}>
+      <Link href={{ pathname: `${process.env.BACKEND_URL}/search`, query: { query: query } }}>
         <a className={styles.headerSearchBtn}>
-          <img src="/icons/search.svg"></img>
+          <img src={`${process.env.BACKEND_URL}/icons/search.svg`}></img>
         </a>
       </Link>
     </div>

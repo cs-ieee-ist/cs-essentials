@@ -11,7 +11,7 @@ export default function SearchCard({
 	color: string;
 }) {
 	return (
-		<Link href="/content/[topic]/[page]" as={page.getLink()}>
+		<Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}${page.getLink()}`}>
 			<a>
 				<div className={` ${styles.searchCard}`}>
 					<div

@@ -1,4 +1,5 @@
+const debug = process.env.NODE_ENV !== 'production';
+
 module.exports = {
-	//assetPrefix: !debug ? '/CS-Esstentials/' : '',
-	exportTrailingSlash: true
+	assetPrefix: !debug ? '/cs-essentials/' : '',
 }
