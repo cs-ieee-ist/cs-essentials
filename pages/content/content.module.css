@@ -1,0 +1,17 @@
+.pageContentContainer {
+	display: flex;
+}
+
+.dummySidebar {
+  width: var(--content-sidebar-width);
+}
+
+@media screen and (max-width: 750px) {
+	.pageContentContainer {
+		flex-direction: column;
+	}
+	.dummySidebar {
+		width: 0;
+	}
+}
+

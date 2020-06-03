@@ -1,0 +1,57 @@
+@import url("./code.css");
+
+:root {
+  --light-black: #333;
+  --gray: #707070;
+	--light-gray: #f6f6f6;
+	--light-gray-2: #dcdcdc;
+  --white: #fff;
+  --primary-dark: #1c4259;
+  --primary: #12679d;
+  --primary-light: #66c5d6;
+  --accent-light: #e1d7d8;
+  --accent: #dabc81;
+
+  --content-sidebar-width: 175px;
+}
+
+html,
+body {
+  padding: 0;
+  margin: 0;
+  font-family: Inter, -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
+    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  line-height: 1.6;
+  font-size: 18px;
+  background-color: var(--light-gray);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+a {
+  color: #0070f3;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+@media screen and (max-width: 750px) {
+	html {
+		font-size: 16px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	html {
+		font-size: 14px;
+	}
+}

@@ -1,0 +1,165 @@
+.homeCard {
+	width: 100%;
+	height: 100%;
+	border-radius: 10px;
+	height: 220px;
+	display: flex;
+	flex-direction: column;
+	background-color: var(--white);
+	border: 1px solid var(--gray);
+	overflow: hidden;
+	color: var(--light-black);
+	cursor: pointer;
+}
+
+.homeCard:hover {
+	box-shadow: 0px 0px 4px 0px rgba(0, 0, 0, 0.4);
+}
+
+.homeCardColor {
+	width: 100%;
+	height: 75%;
+}
+
+.homeCardTitle {
+	flex: 1;
+	display: flex;
+	align-items: center;
+	padding: 12px 24px;
+	text-transform: capitalize;
+}
+
+.contentCard {
+	position: relative;
+	max-width: 650px;
+	margin: auto;
+	border: 1px solid #c3c3c3;
+	border-radius: 12px;
+	background-color: var(--white);
+	padding: 24px;
+	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
+	flex: 1;
+	overflow: hidden;
+}
+
+.contentContainer .contentCard {
+	margin-right: var(--content-sidebar-width);
+}
+
+.contentCard::before {
+	content: '';
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 6px;
+	left: 0;
+	top: 0;
+	background-color: var(--accent);
+}
+
+.contentArticle {}
+
+.contentArticle h1 {
+	margin-top: 0;
+}
+
+.searchCard {
+	width: 540px;
+	height: 50px;
+	margin: 0 auto 14px;
+	background-color: var(--white);
+	border: 1px solid var(--primary-dark);
+	border-radius: 8px;
+	display: flex;
+	overflow: hidden;
+	cursor: pointer;
+}
+
+.searchCard:hover {
+	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
+}
+
+.searchCardColor {
+	width: 50px;
+	height: 100%;
+}
+
+.searchCardTitle {
+	display: flex;
+	align-items: center;
+	margin: auto 24px;
+	text-transform: capitalize;
+	color: #212121;
+	flex: 1;
+}
+
+.contentCard {
+	color: #212121;
+}
+
+.contentCard h1 {
+	font-size: 1.35rem;
+}
+
+.contentCard h2 {
+	font-size: 1.1rem;
+	border-bottom: 1px solid var(--light-gray-2);
+}
+
+.contentCard h3 {
+	font-size: 0.9rem;
+}
+
+.contentCard ul, .contentCard ol {
+	font-size: 0.8rem;
+}
+
+.contentCard p {
+	font-size: .8rem;
+}
+
+.contentCard pre {
+	margin: 0 -24px;
+	padding: 12px 24px;
+	margin: 0 -24px;
+	padding: 12px 24px;
+	font-size: 0.8rem;
+}
+
+.contentCard table {
+	width: 100%;
+	font-size: 0.8rem;
+	background-color: #282a36;
+	color: #f8f8f2;
+	border-radius: 2px;
+	border-collapse: collapse;
+	overflow: hidden;
+}
+
+.contentCard td, .contentCard th {
+	border: 1px solid #4f5465;
+	padding: 8px 14px;
+}
+
+.contentCard tbody tr:hover {
+	background-color: rgba(255, 255, 255, 0.05);
+}
+
+.contentCard th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: center;
+}
+
+@media screen and (max-width: 750px) {
+	.contentCard {
+		width: 100%;
+		padding: 24px 12px;
+	}
+}
+
+@media screen and (max-width: 550px) {
+	.searchCard {
+		width: 100%;
+	}
+}
