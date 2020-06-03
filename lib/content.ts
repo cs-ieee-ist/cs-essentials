@@ -5,9 +5,13 @@ import remark from 'remark'
 import html from 'remark-html'
 import highlight from 'remark-highlight.js'
 
+const rootFilesNames = {
+	ABOUT: "about.md",
+	DEMO: "demo.md"
+};
+
 const TOPICS_DIR_PATH = 'content/topics';
 const contentDirectory = path.join(process.cwd(), TOPICS_DIR_PATH)
-const aboutPagePath = path.join(process.cwd(), 'content/about.md')
 
 export function getContentTopics() {
 	// Get topics names under /content
@@ -83,10 +87,18 @@ export async function getContentData(topic: string, page: string) {
 	}
 }
 
-
 export async function getAboutContent() {
+	return getPageContent(rootFilesNames.ABOUT);
+}
+
+export async function getDemoContent() {
+	return getPageContent(rootFilesNames.DEMO);
+}
+
+export async function getPageContent(fileName: string) {
+	const pagePath = path.join(process.cwd(), `content/${fileName}`);
 	// Read markdown file as string
-	const fileContents = fs.readFileSync(aboutPagePath, 'utf8')
+	const fileContents = fs.readFileSync(pagePath, 'utf8')
 
 	// Use gray-matter to parse the post metadata section
 	const matterResult = matter(fileContents)

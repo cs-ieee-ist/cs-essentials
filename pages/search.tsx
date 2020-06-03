@@ -21,7 +21,7 @@ export default function Search({ pages }: { pages: {topic: string, page: string}
 	return (
 		<Layout>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>{"Search - " + siteTitle}</title>
 			</Head>
 			<div className={styles.contentContainer}>
 				{resultPages.map((value) => {
