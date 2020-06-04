@@ -20,7 +20,7 @@ export default function ContentSidebar({
                 isSamePage(page.getPage(), activePage) ? styles.active : ""
               }`}
             >
-              <Link href="/content/[topic]/[page]" as={page.getLink()}>
+              <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}${page.getLink()}`}>
                 <a>{page.getPage()}</a>
               </Link>
             </li>
