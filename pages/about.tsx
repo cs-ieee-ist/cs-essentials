@@ -5,7 +5,7 @@ import ContentCard from "../components/cards/contentCard";
 import styles from "../components/layout.module.css";
 import { GetStaticProps } from "next";
 
-export default function About({ aboutContent }: { aboutContent: string }) {
+export default function About({ content }: { content: string }) {
 	return (
 		<Layout>
 			<Head>
@@ -13,7 +13,7 @@ export default function About({ aboutContent }: { aboutContent: string }) {
 			</Head>
 			<div className={styles.contentContainer}>
 				<ContentCard>
-					<div dangerouslySetInnerHTML={{ __html: aboutContent }} />
+					<div dangerouslySetInnerHTML={{ __html: content }} />
 				</ContentCard>
 			</div>
 		</Layout>
@@ -21,10 +21,10 @@ export default function About({ aboutContent }: { aboutContent: string }) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-	const aboutContent = await getAboutContent();
+	const content = await getAboutContent();
 	return {
 		props: {
-			aboutContent,
+			content,
 		},
 	};
 };
