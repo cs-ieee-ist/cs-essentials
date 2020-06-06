@@ -68,7 +68,7 @@ PS1BACKUP='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[
 
 ### Special characters
 
-As you might have seen there is a lot of weird characters in your PS1. So lets start by understanding what each one does.
+As you might have seen there is a lot of weird characters in the PS1. So lets start by understanding what each one does.
 
 | Character | Description |
 | ------ | ----------- |
@@ -93,7 +93,68 @@ As you might have seen there is a lot of weird characters in your PS1. So lets s
 |\] |End a sequence of non-printing characters 
 [**Complete List**](https://www.gnu.org/savannah-checkouts/gnu/bash/manual/bash.html#Controlling-the-Prompt)
 
+### Text appearence
 
+You can also change the text format, color and background. The way it works is simple but it makes the string very confusing for anyone that doesn't know what is happening. For example, the previous example:
 
+```bash
+${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ 
+```
 
+It's easier to read if we split it into blocks, like this:
+
+```bash
+${debian_chroot:+($debian_chroot)}
+\[\033[01;32m\]\u@\h
+\[\033[00m\]:
+\[\033[01;34m\]\w
+\[\033[00m\]\$ 
+```
+
+Lets take a look at the second line. What is happening is that we are defining the text "\u@\h" to be bold and green.
+The text format is specified between the \\[ and \\] characters. Inside, we must have either \033[ or \e[ to indicate that the values refer to color information. Now we can have values for the text format, color and background color, if none is given the default value is used. At the end of the tag, we must have an m to indicate the end of the color information.
+
+Structure example:
+```bash
+\[\033[TEXT_FORMAT;COLOR;BACK_COLORm\]
+```
+
+Example:
+```bash
+\[\033[01;33m\]
+```
+
+### Tables with values
+
+| Value | Text Format |
+| ------ | ----------- |
+| 0 | Normal Text | 
+| 1 | Bold or Light Text |
+| 2 | Dim Text |
+| 4 | Underlined Text |
+| 5 | Blinking Text |
+| 7 | Reversed Text |
+| 8 | Hidden Text |
+
+| Value | Color |
+| ------ | ----------- |
+| 30 | Black |
+| 31 | Red |
+| 32 | Green |
+| 33 | Yellow |
+| 34 | Blue |
+| 35 | Purple |
+| 36 | Cyan |
+| 37 | White |
+
+| Value | Background Color |
+| ------ | ----------- |
+| 40 | Black background |
+| 41 | Red background |
+| 42 | Green background |
+| 43 | Yellow background |
+| 44 | Blue background |
+| 45 | Purple background |
+| 46 | Cyan background |
+| 47 | White background |
 
