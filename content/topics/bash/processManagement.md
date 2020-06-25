@@ -12,7 +12,7 @@ someDirectory $ command1 &
 
 someDirectory $ 
 ```
-The command1 will run in background and the process id (PID) is 1234.
+The command1 will run in the background and the process id (PID) is 1234.
 
 ### List processes
 

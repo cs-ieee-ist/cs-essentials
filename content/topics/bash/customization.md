@@ -1,6 +1,6 @@
 # Bash - Customization (.bashrc)
 
-Everytime you create a new terminal the code at the file .bashrc is executed. This allows us to run commands add or change variables and do other types of things.
+Every time you create a new terminal the code at the file .bashrc is executed. This allows us to run commands add or change variables and do other types of things.
 
 ## PATH
 
@@ -22,14 +22,14 @@ PATH=/opt/nodejs/bin:$PATH
 
 ## Aliases
 
-Aliases allows you to create or override commands so you don't need to type a long sequence o characters. This is very useful and allows you to save a lot of time.
+Aliases allow you to create or override commands so you don't need to type a long sequence of characters. This is very useful and allows you to save a lot of time.
 
 For example, if you want to show the directory files (ls) including the files or directories that start with a '.'.
 ```bash
 alias la='ls -a'
 ```
 
-You can create all kinds of alias, you just need to make sure you don't use a name already in use. Other good example of use is when you have a project directory and you dont want to remember exactly the location. In that case you just create an alias that uses the cd command:
+You can create all kinds of alias, you just need to make sure you don't use a name already in use. Another good example of use is when you have a project directory and you don't want to remember exactly the location. In that case, you just create an alias that uses the cd command:
 ```bash
 alias project1='cd ~/projects/project1'
 ```
@@ -59,7 +59,7 @@ else
     PS1='${debian_chroot:+($debian_chroot)}\u@\h:\w\$ '
 fi
 ```
-Make sure you change the one being executed, in the previous example if the prompt shows up with colors then is the first one (inside the if) you need to change.
+Make sure you change the one being executed, in the previous example if the prompt shows up with colours then is the first one (inside the if) you need to change.
 
 Before changing the PS1 variable make sure you create a backup variable with the default value, example: 
 ```bash
@@ -68,13 +68,13 @@ PS1BACKUP='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[
 
 ### Special characters
 
-As you might have seen there is a lot of weird characters in the PS1. So lets start by understanding what each one does.
+As you might have seen there is a lot of weird characters in the PS1. So let's start by understanding what each one does.
 
 | Character | Description |
 | ------ | ----------- |
 |\a |A bell character |
 |\d |The date, in "Weekday Month Date" format (e.g., "Tue May 26") |
-|\D{format} |The format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in a locale-specific time representation. The braces are required |
+|\D{format} |The format is passed to strftime(3) and the result is inserted into the prompt string; an empty format results in locale-specific time representation. The braces are required |
 |\e |An escape character |
 |\h |The hostname, up to the first '.' |
 |\H |The hostname |
@@ -95,7 +95,7 @@ As you might have seen there is a lot of weird characters in the PS1. So lets st
 
 ### Text appearence
 
-You can also change the text format, color and background. The way it works is simple but it makes the string very confusing for anyone that doesn't know what is happening. For example, the previous example:
+You can also change the text format, colour and background. The way it works is simple but it makes the string very confusing for anyone that doesn't know what is happening. For example, the previous example:
 
 ```bash
 ${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\]\$ 
@@ -111,8 +111,8 @@ ${debian_chroot:+($debian_chroot)}
 \[\033[00m\]\$ 
 ```
 
-Lets take a look at the second line. What is happening is that we are defining the text "\u@\h" to be bold and green.
-The text format is specified between the \\[ and \\] characters. Inside, we must have either \033[ or \e[ to indicate that the values refer to color information. Now we can have values for the text format, color and background color, if none is given the default value is used. At the end of the tag, we must have an m to indicate the end of the color information.
+Let's take a look at the second line. What is happening is that we are defining the text "\u@\h" to be bold and green.
+The text format is specified between the \\[ and \\] characters. Inside, we must have either \033[ or \e[ to indicate that the values refer to colour information. Now we can have values for the text format, colour and background colour if none is given the default value is used. At the end of the tag, we must have an m to indicate the end of the colour information.
 
 Structure example:
 ```bash

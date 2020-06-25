@@ -1,13 +1,13 @@
 # Bash - Permissions
 
-The Unix based operating systems, offer a multi-user capability. This means that more than one user can use the same computer at the same time. To proctect the users from each was created a permission method to to only allow certain users to read, write or execute certain file.
+The Unix based operating systems, offer a multi-user capability. This means that more than one user can use the same computer at the same time. To protect the users from each was created a permission method to only allow certain users to read, write or execute a certain file.
 
 ## File Permissions
 
-On Linux, each file and directory has assigned access rights. These rights are categorized in three groups:
+On Linux, each file and directory has assigned access rights. These rights are categorized into three groups:
 
 - The file owner
-- Users in the owners group
+- Users in the owner's group
 - Others Users
 
 And each group has the same three privilege definitions:
@@ -41,7 +41,7 @@ Type of file: d for directory, - otherwise
 ```
 Here we can see:
 
-* The owner, in this case the superuser root, can read, write, and execute the file;
+* The owner, in this case, the superuser root, can read, write, and execute the file;
 * Members of the group "root" can only read and execute the file;
 * Everyone else can only read and execute the file;
 * The file owner is "root";
@@ -50,7 +50,7 @@ Here we can see:
 
 ## Change files permissions
 
-To change the files permissions we can use the 'chmod' command which stands for 'change mode'. This command allows us to set the permissions (read, write, execute) of a file for the owner, group and the everyone else.
+To change the file's permissions we can use the 'chmod' command which stands for 'change mode'. This command allows us to set the permissions (read, write, execute) of a file for the owner, group and the everyone else.
 
 ```bash
 chmod permissions filename
@@ -60,21 +60,21 @@ We can use this command in two ways the absolute mode and symbolic mode.
 
 ### Absolute Mode
 
-In this mode, file permissions are not represented as characters but as three digit octal number, one digit for each group. The first digit is the owner's permissions, the second is the group's permissions, and the third is the other's permissions. 
+In this mode, file permissions are not represented as characters but as a three-digit octal number, one digit for each group. The first digit is the owner's permissions, the second is the group's permissions, and the third is the other's permissions. 
 
 
 | Number | Symbol | Permission |
 | ------ | ------ | ---------- |
-| 0 |	--- | 	No Permission |
+| 0 | --- |   No Permission |
 | 1 | --x | Execute |
 | 2 | -w- | Write |
 | 3 | -wx | Execute + Write |
 | 4 | r-- | Read |
 | 5 | r-x | Read + Execute |
-| 6 | rw- | Read + Write	 |
+| 6 | rw- | Read + Write   |
 | 7 | rwx | Read + Write + Execute |
 
-Now imagine that you want to set the permissions of a file so that only you can read, write , and execute and the members of the group can read it. To do that you will need to run the following command:
+Now imagine that you want to set the permissions of a file so that only you can read, write, and execute and the members of the group can read it. To do that you will need to run the following command:
 
 ```bash
 chmod 740 someFile
@@ -104,12 +104,12 @@ Examples:
 ```bash
 chmod a=rwx someFile
 ```
-* Adding permissions to owner
+* Adding permissions to the owner
 
 ```bash
 chmod u+x someFile
 ```
-* Removing permissions to group
+* Removing permissions to the group
 
 ```bash
 chmod g-rw someFile

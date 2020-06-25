@@ -55,7 +55,7 @@ someDirectory $ man ls
 
 where "program" is the name of the command to view. Man pages vary somewhat in format but generally contain a title, a synopsis of the command's syntax, a description of the command's purpose, and a listing and description of each of the command's options. Man pages, however, do not usually include examples and are intended as a reference, not a tutorial. As an example, let's try viewing the man page for the ls command:
 
-## List of Useful commands
+## List of useful commands
 
 | Command | Description |
 | ------- | ----------- |
