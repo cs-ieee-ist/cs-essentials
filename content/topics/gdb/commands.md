@@ -17,3 +17,21 @@
 | up | | At a breakpoint, GDB can display the values of variables local to the current frame. |
 | down | | Moves the focus of GDB down from the frame currently being examined to the frame of its callee (the reverse of the previous command) |
 |frame *n* | f *n* | Inspect the frame with the given number. |
+
+
+## Analyse stack
+
+| Command | Short version | Description |
+| ------- | ------------- | ----------- |
+| backtrace | bt | Print stack backtrace |
+| backtrace full | | Print values of local variables |
+| frame | f | Show current stack frame
+| frame number | f number | Show the specified frame number |
+| up | | Move up a single frame |
+| down | | Move down a single frame |
+| up number | | Move up the specified number of frames in the stack |
+| down number | | Move down the specified number of frames in the stack |
+| info frame | | List address, language, address of arguments/local variables and which registers were saved in frame.
+| info args | | Info arguments of the selected frame |
+| info locals | | Info arguments of the selected local variables |
+| info catch | | Info arguments of the selected exception handlers |

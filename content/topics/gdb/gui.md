@@ -1,6 +1,6 @@
 # GDB - GUI
 
-There are plenty on Front Ends you can use to debug your code. Here we will only talk about TUI which is built-in GDB. You can checkout this [website](https://sourceware.org/gdb/wiki/GDB%20Front%20Ends) with a good selection of front ends.
+There are plenty of Front Ends you can use to debug your code. Here we will only talk about TUI which is built-in GDB. To see more options you can checkout this [website](https://sourceware.org/gdb/wiki/GDB%20Front%20Ends).
 
 ## TUI
 
@@ -64,7 +64,7 @@ Create a breakpoint at line 4 and line 5:
 ```bash
 (gdb) b hello.c:4
 (gdb) b hello.c:5
-(gdb) b hello.c:5
+(gdb) b hello.c:6
 
 ```
 
