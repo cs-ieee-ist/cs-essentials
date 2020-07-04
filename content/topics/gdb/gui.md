@@ -86,5 +86,5 @@ Everything works as expected, and now we have a graphical interface that helps u
 (gdb) layout next
 ```
 
-This will show the assembly of our example from the current breakpoint. This can be a little bit overwelming, but if you look carefully to the next line you will see that the program will call the "puts" function `callq  0x8001050 <puts@plt>x,1)`. Which makes sense since our current breakpoint is supposed to be the "printf" and if we run `layout src` we can see that we are at the line where the "Hello World" is printed.
+This will show the assembly code of our example from the current breakpoint. This can be a little bit overwelming, but if you look carefully to the line after the current you will see that the program will call the "puts" function `callq  0x8001050 <puts@plt>x,1)`. Which makes sense since our current breakpoint is supposed to be the "printf" and if we run `layout src` we can confirm that.
 
