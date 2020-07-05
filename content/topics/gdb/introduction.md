@@ -1,8 +1,8 @@
 # GDB - Introduction
 
 GDB (GNU Debugger) is a debugger that, like many others, allows you to watch in depth what a program is doing while in execution.
-According to GDB's documentation it can do four main kinds of things to help you catch bugs in the act:
-* Start your program, specifying anything that might affect its behavior.
+According to GDB's documentation, it can do four main kinds of things to help you catch bugs in the act:
+* Start your program, specifying anything that might affect its behaviour.
 * Make your program stop on specified conditions.
 * Examine what has happened, when your program has stopped.
 * Change things in your program, so you can experiment with correcting the effects of one bug and go on to learn about another.
@@ -15,16 +15,16 @@ Let's start using GDB with a very simple program:
 #include <stdio.h>
 
 int main() {
-		int a = 1;
-		a = a + 2;	
-		printf("a: %d\n", a);
+    int a = 1;
+    a = a + 2;  
+    printf("a: %d\n", a);
     return 0;
 }
 ```
 
 ### Compile and run:
 
-To compile we will use gcc, but to debug using GDB we need to add the flag "-g". This flag enables use of extra debugging information that only GDB can use. 
+To compile we will use GCC, but to debug using GDB we need to add the flag "-g". This flag enables the use of extra debugging information that only GDB can use. 
 
 ```bash
 ~ $ gcc -g hello.c
@@ -58,7 +58,7 @@ Breakpoints are places in code, for example, a line in the code, that you can sp
 
 **Analyse Data**
 
-Now that the we have a breakpoint we can run the program again and start analysing the data.
+Now that we have a breakpoint we can run the program again and start analysing the data.
 
 ```bash
 (gdb) run
@@ -66,14 +66,14 @@ Breakpoint 1, main () at hello.c:5
 5               a = a + 2;
 ```
 
-To see current value stored at the variable "a" we use the "print" command, as follows:
+To see the current value stored at the variable "a" we use the "print" command, as follows:
 
 ```bash
 (gdb) print a
 $1 = 1;
 ```
 
-Remenber that the current line has not executed yet. So if we want to execute the current line and stop at the next one we run the "next" command.
+Remember that the current line has not executed yet. So if we want to execute the current line and stop at the next one we run the "next" command.
 
 ```bash
 (gdb) next
