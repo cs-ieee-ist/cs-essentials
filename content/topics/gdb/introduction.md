@@ -24,7 +24,7 @@ int main() {
 
 ### Compile and run:
 
-To compile we will use GCC, but to debug using GDB we need to add the flag "-g". This flag enables the use of extra debugging information that only GDB can use. 
+To compile we will use GCC, but to debug using GDB we need to add the flag "-g". This flag enables the use of extra debugging information that GDB will use. 
 
 ```bash
 ~ $ gcc -g hello.c
@@ -66,7 +66,7 @@ Breakpoint 1, main () at hello.c:5
 5               a = a + 2;
 ```
 
-To see the current value stored at the variable "a" we use the "print" command, as follows:
+To see the current value stored at the variable "a" we use the "print" command.
 
 ```bash
 (gdb) print a
