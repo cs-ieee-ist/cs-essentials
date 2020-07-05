@@ -1,6 +1,6 @@
 # GDB - Debug with core files
 
-A Core dump is a file containing a process's address space (memory) when the process terminates unexpectedly. This file is very useful for debugging, for example, segmentation faults.
+A Core Dump is a file containing a process's address space (memory) when the process terminates unexpectedly. This file is very useful for debugging, for example, segmentation faults.
 
 ## Generate a Core Dump file
 
@@ -19,7 +19,7 @@ To enable the creation we need to run the following commands:
 
 ## The program
 
-To examplify how you can use the Core Dump and the GDB to debug we will use this program:
+To examplify how you can use the Core Dump and the GDB to better debug your programs, we will use this very simple program:
 
 ```c
 int main() {
@@ -41,7 +41,7 @@ Make sure that the Core Dump file was created, you can use the "ls" command.
 
 ## Debug
 
-Now that we have the core file we can start trying to understand the problem.
+Now that we have the core file we can start the debug process.
 
 ### Open GDB
 
@@ -61,9 +61,9 @@ The first thing we are going to do is use the "backtrace" command. A program whe
 #1  0x0000563a5b9f1621 in main () at hello.c:7
 ```
 
-This example is trivial, but in normal cases, this backtrace essential and gives the programmer a good idea of what the problem might be.
+This example is trivial, but in normal cases, this backtrace is essential and gives the programmer a good idea of what the problem might be.
 
-In some cases it might be useful to use the "frame" command, this gives us more information about each frame. For example the frame 0:
+In some cases it might be useful to use the "frame" command to gives us more information about each frame. For example the frame 0:
 
 ```bash
 (gdb) frame 0
@@ -71,6 +71,6 @@ In some cases it might be useful to use the "frame" command, this gives us more 
 3               char c = s[0];
 ```
 
-This information is the same given by the debugger when we started. This is because the operation "s[0]" is trying to access an invalid memory position (0x0).
+This information is the same given by the debugger when we started. This is because the operation "s[0]" is trying to access an invalid memory position (0x0), which is the problem with our program.
 
 

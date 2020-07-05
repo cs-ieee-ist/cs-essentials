@@ -1,6 +1,6 @@
 # GDB - Assembly
 
-Thera are several ocasions where you need to debug at the assembler level. It can be, for example, to understand how the compiler is generating your code and how that code is behaving. 
+There are several occasions where you need to debug at the assembler level. It can be, for example, to understand how the compiler is generating your code and how that code is behaving. 
 
 ## Machine Language related commands
 
@@ -14,7 +14,7 @@ Before we start going through an example, we need to introduce some Assembly rel
 | stepi | si | step assembly instruction |
 | nexti | ni | next assembly instruction |
 | x *address* | | Examine the contents of memory |
-x/nfu *address* | | Examine the contents of memory with specific format. n: number of display items to print (default is 1), f: specify the format for the output i - instr, s-string, x-hex, d-sdecimal, u-udecimal, o-octal, t-binary, a-addr, c-char ,f-float, u: specify the size of the data unit b-byte, h-halfword, w-word, g-giant (8 bytes)|
+x/nfu *address* | | Examine the contents of memory with a specific format. n: number of display items to print (default is 1), f: specify the format for the output i - instr, s-string, x-hex, d-sdecimal, u-udecimal, o-octal, t-binary, a-addr, c-char ,f-float, u: specify the size of the data unit b-byte, h-halfword, w-word, g-giant (8 bytes)|
 
 ## Debug
 
@@ -24,9 +24,9 @@ x/nfu *address* | | Examine the contents of memory with specific format. n: numb
 #include <stdio.h>
 
 int main() {
-		int a = 1;
-		a = a + 2;	
-		printf("a: %d\n", a);
+      int a = 1;
+      a = a + 2;  
+      printf("a: %d\n", a);
     return 0;
 }
 ```
@@ -72,7 +72,7 @@ We can also display the compiled code that corresponds to the "main" function.
    0x000000000800117c <+51>:    retq
 ```
 
-Now we can follow the execution one intruction at a time using the "stepi" command.
+Now we can follow the execution one instruction at a time using the "stepi" command.
 
 ```bash
 (gdb) stepi

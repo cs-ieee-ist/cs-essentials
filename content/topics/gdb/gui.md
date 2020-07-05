@@ -59,13 +59,12 @@ You will see that you have the same GDB layout with the prompt but now you also 
 (gdb) layout src
 ```
 
-Create a breakpoint at line 4 and line 5:
+Let's create a breakpoint at lines 4, 5 and 6:
 
 ```bash
 (gdb) b hello.c:4
 (gdb) b hello.c:5
 (gdb) b hello.c:6
-
 ```
 
 Now at the source code will appear b+ in lines 4, 5 and 6.
