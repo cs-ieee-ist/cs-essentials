@@ -32,6 +32,8 @@ int main() {
 
 ```
 
+Or inline code: `var a = 0;`
+
 ## List
 
 1. Element One
