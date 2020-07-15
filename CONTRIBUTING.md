@@ -2,7 +2,7 @@
 
 ## Installation
 
-* `git clone [repo-url]`
+* `git clone https://github.com/cs-ieee-ist/cs-essentials.git`
 * `npm install`
 
 ## Run
