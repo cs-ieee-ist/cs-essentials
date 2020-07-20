@@ -2,8 +2,12 @@
 
 There is a lot of good lectures and books about vim, here we gathered some of our favorite, hope you like these notes on vim, and good luck on your vim journey!!
 
+
 This topic was inspired by The Missing Semester of Your CS Education, here is the link to the video and lecture notes:
 - [Editors (Vim)](https://missing.csail.mit.edu/2020/editors/)
+
+
+- Vimtutor: When you install vim, it comes with vimtutor. Vimtutor is vim's tutorial! Just type in your terminal **vimtutor**. The approximate time required to complete the tutor is 25-30 minutes.
 
 Thoughtbot as a lot os very good lectures about vim, don't forget to chet it out
 - [The History of Vim](https://www.youtube.com/watch?v=yv6KAzRPHkc&list=PL8tzorAO7s0jy7DQ3Q0FwF3BnXGQnDirs&index=6)
