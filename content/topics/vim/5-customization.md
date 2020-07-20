@@ -15,16 +15,16 @@ To customize Vim for editing a specific file, or a specific type of file, you ca
 
 A default Vim installation will feature a file containing Vim’s core global settings called vimrc. This file will be located at either /etc/vim/vimrc or etc/vimrc, depending on your linux distribution.
 
-But you can create a local vimrc file, the configurations in this file will apply only to the active user account. If you don't have a local vimrc file yet, you can simply create one in your home folder. Normaly the home folder is designated by ~ so you can simply create ~/.vimrc
+But you can create a local vimrc file, the configurations in this file will apply only to the active user account. If you don't have a local vimrc file yet, you can simply create one in your home folder. Normally the home folder is designated by ~ so you can simply create ~/.vimrc
 
-Now you have a empty .vimrc file, in the following topic we will help you create a simple but usefull vim configuration.
+Now you have an empty .vimrc file, in the following topic, we will help you create a simple but useful vim configuration.
 
 ### Basics configs - Example
 
 ```vim
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
-" Description: A minimal, but feature rich, example .vimrc. If you are a
+" Description: A minimal, but feature-rich, example .vimrc. If you are a
 "              newbie, basing your first .vimrc on this file is a good choice.
 "              If you're a more advanced user, building your own .vimrc based
 "              on this file is still a good idea.
@@ -213,13 +213,13 @@ Launch Vim, and type this command:
 
 #### Some Usefull Plugins
 
-Here are some Vim plugins that may be usefull:
+Here are some Vim plugins that may be useful:
 
 1. [NERDTree](https://github.com/preservim/nerdtree) is a file system explorer for the Vim editor.
-2. [gitgutter](https://github.com/airblade/vim-gitgutter) is a Vim plugin which shows a git diff in the sign column. It shows which lines have been added, modified, or removed.
-3. [TagList](https://github.com/vim-scripts/taglist.vim) is a source code browser plugin for Vim and provides an overview of the structure of source code files and allows you to efficiently browse through source code files for different programming languages.
+2. [gitgutter](https://github.com/airblade/vim-gitgutter) is a Vim plugin that shows a git diff in the sign column. It shows which lines have been added, modified, or removed.
+3. [TagList](https://github.com/vim-scripts/taglist.vim) is a source code browser plugin for Vim and provides an overview of the structure of the source code files and allows you to efficiently browse through source code files for different programming languages.
 4. [Lightline](https://github.com/itchyny/lightline.vim) a light and configurable statusline/tabline plugin for Vim.
-5. [Auto-Pairs](https://github.com/jiangmiao/auto-pairs) insert or delete brackets, parens, quotes in pair.
+5. [Auto-Pairs](https://github.com/jiangmiao/auto-pairs) insert or delete brackets, parens, quotes in pairs.
 6. [ack](https://github.com/mileszs/ack.vim) run your favorite search tool from Vim, with an enhanced results list.
 
 ### Plugin Manager
@@ -228,7 +228,7 @@ Here are some Vim plugins that may be usefull:
 
 No. Plugin managers have always been and will always be optional.
 
-#### What is the beneficts of using a plugin manager?
+#### What is the benefits of using a plugin manager?
 
 A plugin manager may be useful if:
 - you use too many plugins,
@@ -236,7 +236,7 @@ A plugin manager may be useful if:
 - you absolutely want your plugins to be always up-to-date.
 
 If you use too many plugins, the usual installation scheme will likely become too messy very quickly.
-Plugin managers usually keep track of what is installed and where, in order to make the whole thing easier for the user.
+Plugin managers usually keep track of what is installed and where in order to make the whole thing easier for the user.
 
 If you like to try new plugins, plugin managers usually make it easier to install/remove individual plugins.
 
@@ -253,9 +253,9 @@ There are several plugin managers, a plugin manager is the cleanest way to insta
 
 ## How to Do 90% of What Plugins Do With Just Vim?
 
-This section will be heavily inspired on a lecture sponsored by [thoughtbot](https://www.youtube.com/watch?v=XA2WjJbmmoM&vl=en). In this sub topic we will talk about fuzzy file search, tag jumping and autocomplete, if you want to see file browsing and snippets, you might consider watching the lecture.
+This section will be heavily inspired on a lecture sponsored by [thoughtbot](https://www.youtube.com/watch?v=XA2WjJbmmoM&vl=en). In this sub-topic we will talk about fuzzy file search, tag jumping and autocomplete, if you want to see file browsing and snippets, you might consider watching the lecture.
 
-Note that this section is not to disencourage you to use plugins, the objective of this section is to show you that vim is a lot powerfull.
+Note that this section is not to discourage you to use plugins, the objective of this section is to show you that vim is a lot powerful.
 
 ### Fuzzy File Search
 
@@ -267,7 +267,7 @@ path +=**
 ```
 This will allow vim so search for files in sub-directories and so on of a root directory.
 
-With this trick you do not need a Fuzzy File Search in Vim, beacuse now your vim is cabable of acessing a file deep in a file tree.
+With this trick, you do not need a Fuzzy File Search in Vim, because now your vim is capable of accessing a file deep in a file tree.
 Let's consider the following directory tree
 
 ```shell
@@ -289,7 +289,7 @@ topics
 |   |   |- cBlob.c
 ```
 
-For this to work you have to start vim in the root directory (topcis).
+For this, to work you have to start vim in the root directory (topics).
 Now you want to work in vim's movement.md file, you just type in vim the command:
 
 ```vim
@@ -297,19 +297,19 @@ Now you want to work in vim's movement.md file, you just type in vim the command
 ```
 You can also tab so vim will know what file you are talking about and complete.
 
-If you tab and there are more than one match vim will present you with the various macthes and you choose
+If you tab and there is more than one match vim will present you with the various matches and you choose
 
 ```vim
 :find intro
 ```
 and then you tab, vim will present you the three possibilities introdution1.md, introdution2.md, introdution3.md. You can navigate in the choices that vims gives you with tabs.
 
-Back to our example, so we use **:find movement.md** and we are in /topics/vim/movement.md, now we want to work in secondBlob.md, but that file is in other directory it is in /topics/git/blobs/secondBlob.md, we can!!! That is why we started vim in the root directory topcis. You just need to do 
+Back to our example, so we use **:find movement.md** and we are in /topics/vim/movement.md, now we want to work on secondBlob.md, but that file is in another directory it is in /topics/git/blobs/secondBlob.md, we can!!! That is why we started vim in the root directory topics. You just need to do 
 
 ```vim
 :find secontBlob.md
 ```
-This is a lot more powerfull, like a normal fuzzy finder you can search using file types
+This is a lot more powerful, like a normal fuzzy finder you can search using file types
 
 ```vim
 :find *.c
@@ -319,7 +319,7 @@ It will open the cBlob.c
 
 ### Tag jumping
 
-You can use Tags, and jump betwenn Tags without using a plugin, here's how!
+You can use Tags, and jump between Tags without using a plugin, here's how!
 
 Using tags makes it easier to jump to certain parts of your programs. First run ctags from the UNIX command line on your source files ( to generate a ***tags*** file, then use these while editing your source files:
 
@@ -327,16 +327,16 @@ Using tags makes it easier to jump to certain parts of your programs. First run 
  | ------------ | ----------- |
  | :tag TAB     | list the known tags |
  | :tag function_name | jump to that function |
- | ctrl-t   | goes to previous spot where you called :tag |
+ | ctrl-t   | goes to the previous spot where you called :tag |
  | ctrl-]   | calls :tag on the word under the cursor |
  | :ptag    | open tag in preview window (also ctrl-w }) |
  | :pclose  | close preview window |
 
 ### Autocomplete
 
-You have several auto complete plugins such as AouCompleteMe.
-But Vim has Autocomplete built-in, if you ust hit Ctrl + n while in insert mode, and you'll get a list of word suggestions.
-To make the list cycle backwards, hit Ctrl + p. You can also use the arrow keys to move up and down the list.
+You have several auto-complete plugins such as AouCompleteMe.
+But Vim has Autocomplete built-in if you just hit Ctrl + n while in insert mode, and you'll get a list of word suggestions.
+To make the list cycle backward, hit Ctrl + p. You can also use the arrow keys to move up and down the list.
 
 | Autocomplete Keys | Description |
 | ----------------- | ----------- |

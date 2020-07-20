@@ -10,21 +10,21 @@ In Vim you have the following Visual modes:
 - Visual Block
 
 Everything that you used to do with the mouse, you now do with the keyboard using editing commands that compose with movement commands.
-Vim’s editing commands are also called “verbs”, because verbs act on nouns.
+Vim’s editing commands are also called “verbs” because verbs act on nouns.
 
-When you are in a Visual mode you can select any part of text using the movemnts that you have learned.
-This mode will be helpfull to change, delete, yank text.
+When you are in a Visual mode you can select any part of text using the movements that you have learned.
+This mode will be helpful to change, delete, yank text.
 
-### Changings and Deleting text
+### Changing and Deleting text
 
-You can quicly change and deleting text in vim.
+You can quickly change and deleting text in vim.
 
 | Key| Description |
 | ----------- | ----------- |
 | cw | change word |
 | dw | delete word |
 
-When you use delete, you just delete the word. When you change you delete the word and vim puts you in insert mode so you can start typing and in fact change the word.
+When you use to delete, you just delete the word. When you change you delete the word and vim puts you in insert mode so you can start typing and in fact change the word.
 
 | Key| Description |
 | ----------- | ----------- |
@@ -41,23 +41,23 @@ Formatting the current paragraph
 gq ap
 ```
 
-***gq*** works based on your textwidth setting.
+***gq*** works based on your text width setting.
 
 ### Other ways of deleting text
 
-Now you know some ways of deleting and chaging text, let's see some more ways of deleting text:
+Now you know some ways of deleting and changing text, let's see some more ways of deleting text:
 
 | Key| Description |
 | ----------- | ----------- |
 | x | delete the character under the cursor|
 | X | delete the character before the cursor|
 
-You can memorize ***x** as exterminate. Let´s see some more usefull verbs:
+You can memorize ***x** as exterminate. Let´s see some more useful verbs:
 
 | Key| Description |
 | ----------- | ----------- |
 | dd | delete the current line|
-| dt. | delete delete from where you are to the period|
+| dt. | delete from where you are to the period|
 | J | join the current line with the next one (delete what's between) |
 
 ### Counts
@@ -75,7 +75,7 @@ Note that you can use counts with almost every command, ex: 1000ctrl-a will incr
 
 ### Modifiers
 
-You can use modifiers to change the meaning of a noun. Some modifiers are i, which means “inner” or “inside”, and a, which means “around”.
+You can use modifiers to change the meaning of a noun. Some modifiers are **i**, which means “inner” or “inside”, and **a**, which means “around”.
 
 | Modifiers | Description |
 | --------- | ----------- |
@@ -108,7 +108,7 @@ Vim instead uses ***y*** for ***yank***.
 #### Pasting text
 Pasting is fairly intuitive—it uses the ***p*** verb. So, if you delete a line using dd, you can paste it back using p.
 
-One thing to remember about pasting is that it generally starts right after your cursor, and either pastes characters/words or lines or columns—based on what you copied (yanked). Also remember that you can undo any paste with the universal undo command "u".
+One thing to remember about pasting is that it generally starts right after your cursor, and either pastes characters/words or lines or columns—based on what you copied (yanked). Also, remember that you can undo any paste with the universal undo command "u".
 
 | Key | Description |
 | -------------- | ----------- |
@@ -118,12 +118,12 @@ One thing to remember about pasting is that it generally starts right after your
 
 ### Repeating actions
 
-One of the most powerfull verbs in all vim is period ***.***
+One of the most powerful verbs in all vim is period ***.***
 Period allows you to repeat whatever it is that you just did.
 
 Let's see an example.
 
-First we delete a word
+First, we delete a word
 ```vim
 dw
 ```
@@ -133,7 +133,7 @@ Delete seven more words
 7.
 ```
 
-Other example
+Another example
 
 ```vim
 cw
@@ -145,7 +145,7 @@ You can use period with anything in vim!
 
 ## Split Screen
 
-Like many others editors in Vim you can split screen horizontal or vertical.
+Like many other editors in Vim you can split-screen horizontal or vertical.
 
 | Key | Description |
 | --- | ----------- |

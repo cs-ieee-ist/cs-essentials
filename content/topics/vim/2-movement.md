@@ -17,7 +17,7 @@
 
 If you want to be more productive using Vim you should spend most of your time in Normal mod, using movement commands to navigate the file. 
 
-Movements in Vim are also called “nouns”, because they refer to chunks of text.
+Movements in Vim are also called “nouns” because they refer to chunks of text.
 
 #### Basic Movement
 
@@ -25,19 +25,19 @@ Movements in Vim are also called “nouns”, because they refer to chunks of te
 | -------- | --- | ----------- |
 | Basic Movement | h j k l| Moves the cursor one character to the left, down, up, right |
 
-Regarding the basic movement keys, ***h j k l***, your right index and middle fingers move you up and down lines, and your index and ring fingers move you left and right by one character. Also the hands are in the middle row of the keyboard which makes more efficient, to reach any other keys.
+Regarding the basic movement keys, ***h j k l***, your right index, and middle fingers move you up and down lines, and your index and ring fingers move you left and right by one character. Also, the hands are in the middle row of the keyboard which makes it more efficient, to reach any other keys.
 
 #### You can also move by word:
 
-You should try to use these type of movements instead os mashing ***h*** and ***l***, to navigate betweent a paragraph is much more efficient since you can navigate between whole words, and later you will find that you can combine these movements with counts, which make this much more efficient.
+You should try to use these type of movements instead os mashing ***h*** and ***l***, to navigate between a paragraph is much more efficient since you can navigate between whole words, and later you will find that you can combine these movements with counts, which make this much more efficient.
 
 | Key | Description |
 | --- | ----------- |
-| w e b| Next word, End of word, Backward one word|
+| w e b| Next word, End of the word, Backward one word|
 
 #### Moving within the line:
 
-No imagine you quickly want to go and change the beginning or end of the line you are currently in, you can using the following nouns: 
+No, imagine you quickly want to go and change the beginning or end of the line you are currently in, you can using the following nouns: 
 
 | Key | Description |
 | --- | ----------- |
@@ -47,13 +47,13 @@ No imagine you quickly want to go and change the beginning or end of the line yo
 
 | Key | Description |
 | --- | ----------- |
-| H M L| Top of screen, Middle of screen, Bottom of screen|
+| H M L| Top of the screen, Middle of the screen, Bottom of screen|
 | Ctr-u Ctr-d| Scroll up, Scroll Down |
 | gg | go to the top of the file |
 | G | go to the bottom of the file |
 | :{nro} or {nro}G | Go to line nro|
 
-When you are in normal mode you can navigate in whithin the file very quiclky using these commands.
+When you are in normal mode you can navigate in within the file very quickly using these commands.
 
 #### Searching
 

@@ -1,6 +1,6 @@
 # Further Reading
 
-There is a lot of good lectures and books about vim, here we gathered some of our favourite, hope you like these notes on vim, and good luck on your vim journey!!
+There is a lot of good lectures and books about vim, here we gathered some of our favorite, hope you like these notes on vim, and good luck on your vim journey!!
 
 This topic was inspired by The Missing Semester of Your CS Education, here is the link to the video and lecture notes:
 - [Editors (Vim)](https://missing.csail.mit.edu/2020/editors/)

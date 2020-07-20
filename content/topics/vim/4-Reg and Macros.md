@@ -5,13 +5,13 @@
 ### What is a register?
 
 Vim's registers are spaces in memory that vim uses to store some text.
-Each one of there registers have a identifier, so they can be accessed later.
+Each one of these registers has an identifier, so they can be accessed later.
 
-It like when you copy some text to your clipboard, except in this case you have more then one clipboard.
+It like when you copy some text to your clipboard, except in this case you have more than one clipboard.
 
 ### Basic uses of registers
 
-Every register is accesses using a double quote before its name, we can access the content in register **a** using **"a**.
+Every register is accessed using a double quote before its name, we can access the content in register **a** using **"a**.
 
 You could add the selected text to the register **a** by doing **"ay**.
 By doing y you are yanking the selected text, and then adding it to the register **"a**.
@@ -21,7 +21,7 @@ You can use the **:reg** command to see all the registers and their content, or 
 
 ### The Default Register
 
-When you **delete**, **change** or **yank** text, the text under the operationg is store in a **register**
+When you **delete**, **change** or **yank** text, the text under the operation is store in a **register**
 By default, the text is stored in a default register, when you **paste**, the text is pasted from the **default register**.
 
 ### Numbered Registers
@@ -34,11 +34,11 @@ Vim populates what is called numbered registers, there are register **"0** to **
 
 So if you deleted, yanked some text you can always paste using **"4g**.
 
-### Read Only Registers
+### Read-Only Registers
 
-There are 4 read only registers **". "% ": "#**
+There are 4 read-only registers **". "% ": "#**
 
-| Read Only Reg | Description |
+| Read-Only Reg | Description |
 | ------------- | ----------- |
 | ". | last inserted text |
 | "% | current file path, starting from the directory where vim was first opened |
@@ -47,7 +47,7 @@ There are 4 read only registers **". "% ": "#**
 
 ## Macros
 
-Some of this sub topics are is so well documented in [Vim Tips Wiki](https://vim.fandom.com/wiki/Macros), that we will just gather, organize and comment the information that the wiki plublished.
+Some of these sub-topics are is so well documented in [Vim Tips Wiki](https://vim.fandom.com/wiki/Macros), that we will just gather, organize and comment on the information that the wiki published.
 
 ### What is a macro in vim?
 
@@ -57,7 +57,7 @@ In Vim, the word "macro" may refer to:
 
 - A sequence of commands recorded to a register.
 - A mapping to expand a sequence of typed keys to a longer sequence.
-- A script written in the Vim script language.
+- A script is written in the Vim script language.
 
 ### How to record a macro?
 
@@ -77,21 +77,21 @@ So, the complete process looks like:
 
 | Macro Table | Description |
 | ----------- | ----------- |
-| qd	| start recording to register d |
-| ...	| your complex series of commands |
-| q	| stop recording |
-| @d	| execute your macro |
-| @@	| execute your macro again |
+| qd    | start recording to register d |
+| ...   | your complex series of commands |
+| q | stop recording |
+| @d    | execute your macro |
+| @@    | execute your macro again |
 
 ### Usefull example with macros
 
 - Given some data like the following:
 
 ```xml
-one	first example
-two	second example
-three	third example
-four	fourth example
+one first example
+two second example
+three   third example
+four    fourth example
 ```
 
 - suppose you want to change the data to make a dictionary for a Python program, with this result:
@@ -154,10 +154,10 @@ Here's a small guide to saving a macro permanently:
 
 ### Editing a macro
 
-Imagine that you just written a vim macro and stopped recording.
+Imagine that you just wrote a vim macro and stopped recording.
 Then you realize that you forgot to add a ^ to the beginning of it, instead of recording the re-record the macro there are simple ways to edit an existing macro.
 
 1. Type **"ap** to paste the contents of the register.
 2. Enter insert mode and edit the text as required.
 3. Press Esc to return to normal mode.
-4. Type **"ayy** to yank the modified macro into the a register.
+4. Type **"ayy** to yank the modified macro into the register.

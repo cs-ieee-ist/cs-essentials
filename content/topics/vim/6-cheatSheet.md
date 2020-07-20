@@ -16,8 +16,8 @@ We know that learning all Vim'ss keybinds takes time, so here is a small Cheat S
 
 | Command | Description |
 | -------------- | ----------- |
-| $| Jump to end of line|
-| ^| Jump to the start of line (First non-blank character|
+| $| Jump to the end of line|
+| ^| Jump to the start of the line (First non-blank character|
 | h| Move left|
 | j| Move down|
 | k| Move up|
@@ -38,7 +38,7 @@ We know that learning all Vim'ss keybinds takes time, so here is a small Cheat S
 | ESQ| Return to Normal mode|
 | i| Insert at cursor position|
 | a| Insert after cursor position|
-| o| Insert on line below cursor position|
+| o| Insert on the line below cursor position|
 | v| Enter Visual mode|
 | Ctr-v| Enter Visual mode (block)|
 | V| Enter Visual Line mode|
@@ -84,7 +84,7 @@ We know that learning all Vim'ss keybinds takes time, so here is a small Cheat S
 | :sp {file name} | horizontal split, if there is no file name, vim will split the current screen|
 | :e filename | Edit a file in a new buffer |
 | :bn | go to next buffer |
-| :bp | go to previous buffer |
+| :bp | go to the previous buffer |
 | :bd | delete a buffer |
 | ctrl+w h | Move to the left window from current window |
 | ctrl+w j | Move to the bottom window from current window |
@@ -121,8 +121,8 @@ Note: An octal number starts with 0, and a hex number starts with 0x or 0X.
 
 | Marking | Descritpion |
 | ------- | ----------- |
-| o | move to other end of marked area |
-| O | move to other corner of block |
+| o | move to another end of marked area |
+| O | move to another corner of block |
 | aw | mark a word |
 | ab | a () block (with braces) |
 | aB | a {} block (with brackets) |
