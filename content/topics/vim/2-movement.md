@@ -1,6 +1,6 @@
 # Vim - Interface
 
-" The most important idea in Vim is that Vim’s interface itself is a programming language. Keystrokes (with mnemonic names) are commands, and these commands compose. This enables efficient movement and edits, especially once the commands become muscle memory. " - The Missing Semester of Your CS Education
+" The most important idea in Vim is that Vim’s interface itself is a programming language. Keystrokes (with mnemonic names) are commands, and these commands compose. This enables efficient movement and edits, especially once the commands become muscle memory. " - [The Missing Semester of Your CS Education](https://missing.csail.mit.edu/2020/editors/)
 
 ## Text Entry Commands
 
