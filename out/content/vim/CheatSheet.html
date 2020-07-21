@@ -1,0 +1,406 @@
+<!DOCTYPE html><html lang="en"><head><meta name="viewport" content="width=device-width"/><meta charSet="utf-8"/><link rel="icon" href="/favicon.ico"/><meta name="description" content=""/><meta property="og:image" content="https://og-image.now.sh/CS%20Essentials%20by%20IEEE-IST%20CS.png?theme=light&amp;md=0&amp;fontSize=75px&amp;images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg"/><meta name="og:title" content="CS Essentials by IEEE-IST CS"/><meta name="twitter:card" content="summary_large_image"/><title>Vim - 6-CheatSheet.md</title><meta name="next-head-count" content="8"/><link rel="preload" href="/cs-essentials/_next/static/css/6b3f639c1b2a0ae37d98.css" as="style"/><link rel="stylesheet" href="/cs-essentials/_next/static/css/6b3f639c1b2a0ae37d98.css"/><link rel="preload" href="/cs-essentials/_next/static/css/4f97618cc8dbc409826e.css" as="style"/><link rel="stylesheet" href="/cs-essentials/_next/static/css/4f97618cc8dbc409826e.css"/><link rel="preload" href="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/pages/content/%5Btopic%5D/%5Bpage%5D.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/pages/_app.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/runtime/webpack-b65cab0b00afd201cbda.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/chunks/framework.98c1b221acb34aa9927b.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/chunks/commons.db9b5a0ac19e93d5953c.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/runtime/main-e9b49079af3ca4f2489b.js" as="script"/><link rel="preload" href="/cs-essentials/_next/static/chunks/5f3c3197599b5045cd830be7b6a2c000915bbc08.0b56ae5792ff0e342f8d.js" as="script"/></head><body><div id="__next"><div class="layout_container__2t4v2"><header class="layout_header__2rhWq"><div class="layout_headerLeft__3fXgx"><a class="layout_headerLogoLink__urb23" href="/cs-essentials/"><img class="layout_headerLogo__1xykU" src="/cs-essentials/images/logo-cs.png" alt="logo"/></a></div><div class="layout_headerSearch__2YZ7L"><input placeholder="Search"/><a class="layout_headerSearchBtn__2eN1c" href="/cs-essentials/search?query="><img src="/cs-essentials/icons/search.svg"/></a></div><div class="layout_headerRight__1L-eG"><span class="layout_headerIcon__E1PDy layout_headerSearchIcon__sWHGS"><img src="/cs-essentials/icons/search.svg" alt="search-icon"/></span><a class="layout_headerIcon__E1PDy" href="/cs-essentials/about"><img src="/cs-essentials/icons/information.svg" alt="info-icon"/></a></div></header><div class="layout_mainContent__2pAB6"><div class="layout_backToHome__1vZsp"><a href="/cs-essentials/"><img src="/cs-essentials/icons/chevron--left.svg" alt="back-icon"/><span>Back to Home</span></a></div><main><div class="layout_contentContainer__3dLAS"><div class="content_pageContentContainer__3dgQS"><div class=" layout_contentSidebar__2y3p8"><ul class="layout_sidebarList__jgfwt"><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Introduction">Introduction</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Basics">Basics</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Movement">Movement</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Interface">Interface</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Reg and Macros">Reg and Macros</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Customization">Customization</a></li><li class="layout_sidebarItem__oQ0rm layout_active__2jiY4"><a href="/cs-essentials/content/vim/CheatSheet">CheatSheet</a></li><li class="layout_sidebarItem__oQ0rm "><a href="/cs-essentials/content/vim/Further Reading">Further Reading</a></li></ul></div><div class=" cards_contentCard__BH2ES"><article class="cards_contentArticle__1g4ga"><div><h1>Vim - Cheat Sheet</h1>
+<p>We know that learning all Vim'ss keybinds takes time, so here is a small Cheat Sheet that may help you in this journey of learning Vim.</p>
+<h2>Commands</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:q</td>
+<td>Quit, fails if unsaved</td>
+</tr>
+<tr>
+<td>:q!</td>
+<td>Quit, even if unsaved</td>
+</tr>
+<tr>
+<td>:w</td>
+<td>Write (Save)</td>
+</tr>
+<tr>
+<td>:wq</td>
+<td>Write (Save) and quit</td>
+</tr>
+</tbody>
+</table>
+<h2>Movement</h2>
+<table>
+<thead>
+<tr>
+<th>Command</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>$</td>
+<td>Jump to the end of line</td>
+</tr>
+<tr>
+<td>^</td>
+<td>Jump to the start of the line (First non-blank character</td>
+</tr>
+<tr>
+<td>h</td>
+<td>Move left</td>
+</tr>
+<tr>
+<td>j</td>
+<td>Move down</td>
+</tr>
+<tr>
+<td>k</td>
+<td>Move up</td>
+</tr>
+<tr>
+<td>l</td>
+<td>Move right</td>
+</tr>
+<tr>
+<td>H</td>
+<td>Move to the top of screen</td>
+</tr>
+<tr>
+<td>M</td>
+<td>Move to the middle of screen</td>
+</tr>
+<tr>
+<td>L</td>
+<td>Move to the bottom of screen</td>
+</tr>
+<tr>
+<td>gg</td>
+<td>Move to the start of file</td>
+</tr>
+<tr>
+<td>G</td>
+<td>Move to the end of file</td>
+</tr>
+<tr>
+<td>20G</td>
+<td>Move to line 20</td>
+</tr>
+<tr>
+<td>w</td>
+<td>Jump to the start of the next word</td>
+</tr>
+<tr>
+<td>b</td>
+<td>Jump to the start of the previous word</td>
+</tr>
+</tbody>
+</table>
+<h2>Modes</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ESQ</td>
+<td>Return to Normal mode</td>
+</tr>
+<tr>
+<td>i</td>
+<td>Insert at cursor position</td>
+</tr>
+<tr>
+<td>a</td>
+<td>Insert after cursor position</td>
+</tr>
+<tr>
+<td>o</td>
+<td>Insert on the line below cursor position</td>
+</tr>
+<tr>
+<td>v</td>
+<td>Enter Visual mode</td>
+</tr>
+<tr>
+<td>Ctr-v</td>
+<td>Enter Visual mode (block)</td>
+</tr>
+<tr>
+<td>V</td>
+<td>Enter Visual Line mode</td>
+</tr>
+</tbody>
+</table>
+<h2>Undo/Redo</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>u</td>
+<td>Undo</td>
+</tr>
+<tr>
+<td>Ctr-r</td>
+<td>Redo</td>
+</tr>
+</tbody>
+</table>
+<h2>Search/Replace</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>/{string}</td>
+<td>Search for string</td>
+</tr>
+<tr>
+<td>n</td>
+<td>Jump to next match</td>
+</tr>
+<tr>
+<td>N</td>
+<td>Jump to previous match</td>
+</tr>
+<tr>
+<td>~</td>
+<td>switch case</td>
+</tr>
+<tr>
+<td>/{string}</td>
+<td>c</td>
+</tr>
+<tr>
+<td>?pattern</td>
+<td>search backward for pattern</td>
+</tr>
+<tr>
+<td>:%s/old/new/g</td>
+<td>replace all old with new throughout file</td>
+</tr>
+<tr>
+<td>:%s/old/new/gc</td>
+<td>replace all old with new throughout file with confirmations</td>
+</tr>
+</tbody>
+</table>
+<h2>Copy and Pasting</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>y [in Visual Mode]</td>
+<td>Copy highlighted text</td>
+</tr>
+<tr>
+<td>yy</td>
+<td>Copy current line</td>
+</tr>
+<tr>
+<td>d [in Visual Mode]</td>
+<td>Cut highlighted text</td>
+</tr>
+<tr>
+<td>dd</td>
+<td>Cut current line</td>
+</tr>
+<tr>
+<td>Ctr-Shift-V</td>
+<td>Paste from external clipboard</td>
+</tr>
+<tr>
+<td>P</td>
+<td>Paste before the cursor</td>
+</tr>
+<tr>
+<td>p</td>
+<td>Paste after the cursor</td>
+</tr>
+</tbody>
+</table>
+<h2>Split Screen (Working with multiple files)</h2>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>:vs {file name}</td>
+<td>vertical split, if there is no file name, vim will split the current screen</td>
+</tr>
+<tr>
+<td>:sp {file name}</td>
+<td>horizontal split, if there is no file name, vim will split the current screen</td>
+</tr>
+<tr>
+<td>:e filename</td>
+<td>Edit a file in a new buffer</td>
+</tr>
+<tr>
+<td>:bn</td>
+<td>go to next buffer</td>
+</tr>
+<tr>
+<td>:bp</td>
+<td>go to the previous buffer</td>
+</tr>
+<tr>
+<td>:bd</td>
+<td>delete a buffer</td>
+</tr>
+<tr>
+<td>ctrl+w h</td>
+<td>Move to the left window from current window</td>
+</tr>
+<tr>
+<td>ctrl+w j</td>
+<td>Move to the bottom window from current window</td>
+</tr>
+<tr>
+<td>ctrl+w k</td>
+<td>Move to the top window from current window</td>
+</tr>
+<tr>
+<td>ctrl+w l</td>
+<td>Move to the right window from current window</td>
+</tr>
+<tr>
+<td>ctrl+w r</td>
+<td>Swap bottom/top if split horizontally</td>
+</tr>
+<tr>
+<td>ctrl+w R</td>
+<td>Swap top/bottom if split horizontally</td>
+</tr>
+<tr>
+<td>ctrl+w r</td>
+<td>Rotates the windows from left to right - only if the windows are split vertically</td>
+</tr>
+<tr>
+<td>ctrl+w R</td>
+<td>Rotates the windows from right to left - only if the windows are split vertically</td>
+</tr>
+<tr>
+<td>ctrl+ws</td>
+<td>Split windows</td>
+</tr>
+<tr>
+<td>ctrl+ww</td>
+<td>switch between windows</td>
+</tr>
+<tr>
+<td>ctrl+wq</td>
+<td>Quit a window</td>
+</tr>
+<tr>
+<td>ctrl+wv</td>
+<td>Split windows vertically</td>
+</tr>
+</tbody>
+</table>
+<h3>Modifiers</h3>
+<table>
+<thead>
+<tr>
+<th>Modifiers</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ci{</td>
+<td>change the contents inside the current pair of curly brackets</td>
+</tr>
+<tr>
+<td>ci[</td>
+<td>change the contents inside the current pair of square brackets</td>
+</tr>
+<tr>
+<td>ca(</td>
+<td>change a single-quoted string, including the surrounding curve brackets</td>
+</tr>
+<tr>
+<td>da'</td>
+<td>delete a single-quoted string, including the surrounding single quotes</td>
+</tr>
+</tbody>
+</table>
+<h3>Increment/Decrement</h3>
+<table>
+<thead>
+<tr>
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ctrl+a</td>
+<td>increments the number</td>
+</tr>
+<tr>
+<td>ctrl+x</td>
+<td>decrements the number</td>
+</tr>
+</tbody>
+</table>
+<p>Note: An octal number starts with 0, and a hex number starts with 0x or 0X.</p>
+<h3>Marking text (visual mode)</h3>
+<table>
+<thead>
+<tr>
+<th>Marking</th>
+<th>Descritpion</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>o</td>
+<td>move to another end of marked area</td>
+</tr>
+<tr>
+<td>O</td>
+<td>move to another corner of block</td>
+</tr>
+<tr>
+<td>aw</td>
+<td>mark a word</td>
+</tr>
+<tr>
+<td>ab</td>
+<td>a () block (with braces)</td>
+</tr>
+<tr>
+<td>aB</td>
+<td>a {} block (with brackets)</td>
+</tr>
+<tr>
+<td>ib</td>
+<td>inner () block</td>
+</tr>
+<tr>
+<td>iB</td>
+<td>inner {} block</td>
+</tr>
+</tbody>
+</table>
+</div></article></div><div class="content_dummySidebar__LMYsL"></div></div></div></main></div><footer class="layout_footer__127N0"><span class="layout_footerTitle__36Eb7">CS Essentials by IEEE-IST CS</span></footer></div></div><script id="__NEXT_DATA__" type="application/json">{"props":{"pageProps":{"contentData":{"topic":"vim","page":"6-CheatSheet.md","contentHtml":"\u003ch1\u003eVim - Cheat Sheet\u003c/h1\u003e\n\u003cp\u003eWe know that learning all Vim'ss keybinds takes time, so here is a small Cheat Sheet that may help you in this journey of learning Vim.\u003c/p\u003e\n\u003ch2\u003eCommands\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eCommand\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e:q\u003c/td\u003e\n\u003ctd\u003eQuit, fails if unsaved\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:q!\u003c/td\u003e\n\u003ctd\u003eQuit, even if unsaved\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:w\u003c/td\u003e\n\u003ctd\u003eWrite (Save)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:wq\u003c/td\u003e\n\u003ctd\u003eWrite (Save) and quit\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eMovement\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eCommand\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e$\u003c/td\u003e\n\u003ctd\u003eJump to the end of line\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e^\u003c/td\u003e\n\u003ctd\u003eJump to the start of the line (First non-blank character\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eh\u003c/td\u003e\n\u003ctd\u003eMove left\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ej\u003c/td\u003e\n\u003ctd\u003eMove down\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ek\u003c/td\u003e\n\u003ctd\u003eMove up\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003el\u003c/td\u003e\n\u003ctd\u003eMove right\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eH\u003c/td\u003e\n\u003ctd\u003eMove to the top of screen\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eM\u003c/td\u003e\n\u003ctd\u003eMove to the middle of screen\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eL\u003c/td\u003e\n\u003ctd\u003eMove to the bottom of screen\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003egg\u003c/td\u003e\n\u003ctd\u003eMove to the start of file\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eG\u003c/td\u003e\n\u003ctd\u003eMove to the end of file\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e20G\u003c/td\u003e\n\u003ctd\u003eMove to line 20\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ew\u003c/td\u003e\n\u003ctd\u003eJump to the start of the next word\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eb\u003c/td\u003e\n\u003ctd\u003eJump to the start of the previous word\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eModes\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eESQ\u003c/td\u003e\n\u003ctd\u003eReturn to Normal mode\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ei\u003c/td\u003e\n\u003ctd\u003eInsert at cursor position\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ea\u003c/td\u003e\n\u003ctd\u003eInsert after cursor position\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eo\u003c/td\u003e\n\u003ctd\u003eInsert on the line below cursor position\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ev\u003c/td\u003e\n\u003ctd\u003eEnter Visual mode\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eCtr-v\u003c/td\u003e\n\u003ctd\u003eEnter Visual mode (block)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eV\u003c/td\u003e\n\u003ctd\u003eEnter Visual Line mode\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eUndo/Redo\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eu\u003c/td\u003e\n\u003ctd\u003eUndo\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eCtr-r\u003c/td\u003e\n\u003ctd\u003eRedo\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eSearch/Replace\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e/{string}\u003c/td\u003e\n\u003ctd\u003eSearch for string\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003en\u003c/td\u003e\n\u003ctd\u003eJump to next match\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eN\u003c/td\u003e\n\u003ctd\u003eJump to previous match\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e~\u003c/td\u003e\n\u003ctd\u003eswitch case\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e/{string}\u003c/td\u003e\n\u003ctd\u003ec\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e?pattern\u003c/td\u003e\n\u003ctd\u003esearch backward for pattern\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:%s/old/new/g\u003c/td\u003e\n\u003ctd\u003ereplace all old with new throughout file\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:%s/old/new/gc\u003c/td\u003e\n\u003ctd\u003ereplace all old with new throughout file with confirmations\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eCopy and Pasting\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003ey [in Visual Mode]\u003c/td\u003e\n\u003ctd\u003eCopy highlighted text\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eyy\u003c/td\u003e\n\u003ctd\u003eCopy current line\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ed [in Visual Mode]\u003c/td\u003e\n\u003ctd\u003eCut highlighted text\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003edd\u003c/td\u003e\n\u003ctd\u003eCut current line\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eCtr-Shift-V\u003c/td\u003e\n\u003ctd\u003ePaste from external clipboard\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eP\u003c/td\u003e\n\u003ctd\u003ePaste before the cursor\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ep\u003c/td\u003e\n\u003ctd\u003ePaste after the cursor\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch2\u003eSplit Screen (Working with multiple files)\u003c/h2\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003e:vs {file name}\u003c/td\u003e\n\u003ctd\u003evertical split, if there is no file name, vim will split the current screen\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:sp {file name}\u003c/td\u003e\n\u003ctd\u003ehorizontal split, if there is no file name, vim will split the current screen\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:e filename\u003c/td\u003e\n\u003ctd\u003eEdit a file in a new buffer\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:bn\u003c/td\u003e\n\u003ctd\u003ego to next buffer\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:bp\u003c/td\u003e\n\u003ctd\u003ego to the previous buffer\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003e:bd\u003c/td\u003e\n\u003ctd\u003edelete a buffer\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w h\u003c/td\u003e\n\u003ctd\u003eMove to the left window from current window\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w j\u003c/td\u003e\n\u003ctd\u003eMove to the bottom window from current window\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w k\u003c/td\u003e\n\u003ctd\u003eMove to the top window from current window\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w l\u003c/td\u003e\n\u003ctd\u003eMove to the right window from current window\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w r\u003c/td\u003e\n\u003ctd\u003eSwap bottom/top if split horizontally\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w R\u003c/td\u003e\n\u003ctd\u003eSwap top/bottom if split horizontally\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w r\u003c/td\u003e\n\u003ctd\u003eRotates the windows from left to right - only if the windows are split vertically\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+w R\u003c/td\u003e\n\u003ctd\u003eRotates the windows from right to left - only if the windows are split vertically\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+ws\u003c/td\u003e\n\u003ctd\u003eSplit windows\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+ww\u003c/td\u003e\n\u003ctd\u003eswitch between windows\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+wq\u003c/td\u003e\n\u003ctd\u003eQuit a window\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+wv\u003c/td\u003e\n\u003ctd\u003eSplit windows vertically\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch3\u003eModifiers\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eModifiers\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eci{\u003c/td\u003e\n\u003ctd\u003echange the contents inside the current pair of curly brackets\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eci[\u003c/td\u003e\n\u003ctd\u003echange the contents inside the current pair of square brackets\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eca(\u003c/td\u003e\n\u003ctd\u003echange a single-quoted string, including the surrounding curve brackets\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eda'\u003c/td\u003e\n\u003ctd\u003edelete a single-quoted string, including the surrounding single quotes\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003ch3\u003eIncrement/Decrement\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eKey\u003c/th\u003e\n\u003cth\u003eDescription\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+a\u003c/td\u003e\n\u003ctd\u003eincrements the number\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003ectrl+x\u003c/td\u003e\n\u003ctd\u003edecrements the number\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n\u003cp\u003eNote: An octal number starts with 0, and a hex number starts with 0x or 0X.\u003c/p\u003e\n\u003ch3\u003eMarking text (visual mode)\u003c/h3\u003e\n\u003ctable\u003e\n\u003cthead\u003e\n\u003ctr\u003e\n\u003cth\u003eMarking\u003c/th\u003e\n\u003cth\u003eDescritpion\u003c/th\u003e\n\u003c/tr\u003e\n\u003c/thead\u003e\n\u003ctbody\u003e\n\u003ctr\u003e\n\u003ctd\u003eo\u003c/td\u003e\n\u003ctd\u003emove to another end of marked area\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eO\u003c/td\u003e\n\u003ctd\u003emove to another corner of block\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eaw\u003c/td\u003e\n\u003ctd\u003emark a word\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eab\u003c/td\u003e\n\u003ctd\u003ea () block (with braces)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eaB\u003c/td\u003e\n\u003ctd\u003ea {} block (with brackets)\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eib\u003c/td\u003e\n\u003ctd\u003einner () block\u003c/td\u003e\n\u003c/tr\u003e\n\u003ctr\u003e\n\u003ctd\u003eiB\u003c/td\u003e\n\u003ctd\u003einner {} block\u003c/td\u003e\n\u003c/tr\u003e\n\u003c/tbody\u003e\n\u003c/table\u003e\n"},"topicPages":[{"topic":"vim","page":"Introduction"},{"topic":"vim","page":"Basics"},{"topic":"vim","page":"Movement"},{"topic":"vim","page":"Interface"},{"topic":"vim","page":"Reg and Macros"},{"topic":"vim","page":"Customization"},{"topic":"vim","page":"CheatSheet"},{"topic":"vim","page":"Further Reading"}]},"__N_SSG":true},"page":"/content/[topic]/[page]","query":{"topic":"vim","page":"CheatSheet"},"buildId":"Q2epHAcelol2LBtyOIXw1","assetPrefix":"/cs-essentials","nextExport":false,"isFallback":false,"gsp":true}</script><script nomodule="" src="/cs-essentials/_next/static/runtime/polyfills-16ccf9440fd1c9275fd4.js"></script><script async="" data-next-page="/content/[topic]/[page]" src="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/pages/content/%5Btopic%5D/%5Bpage%5D.js"></script><script async="" data-next-page="/_app" src="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/pages/_app.js"></script><script src="/cs-essentials/_next/static/runtime/webpack-b65cab0b00afd201cbda.js" async=""></script><script src="/cs-essentials/_next/static/chunks/framework.98c1b221acb34aa9927b.js" async=""></script><script src="/cs-essentials/_next/static/chunks/commons.db9b5a0ac19e93d5953c.js" async=""></script><script src="/cs-essentials/_next/static/runtime/main-e9b49079af3ca4f2489b.js" async=""></script><script src="/cs-essentials/_next/static/chunks/5f3c3197599b5045cd830be7b6a2c000915bbc08.0b56ae5792ff0e342f8d.js" async=""></script><script src="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/_buildManifest.js" async=""></script><script src="/cs-essentials/_next/static/Q2epHAcelol2LBtyOIXw1/_ssgManifest.js" async=""></script></body></html>
