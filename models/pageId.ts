@@ -11,7 +11,7 @@ export default class PageId {
 
 	static createTitle(topic: string, page: string): string {
 		const topicStr = topic.charAt(0).toUpperCase() + topic.slice(1);
-		const pageStr = page.charAt(0).toUpperCase() + page.slice(1);
+		const pageStr = page.replace(/[0-9]+-/, '').replace(/\.md$/, '');
 		return `${topicStr} - ${pageStr}`;
 	}
 
@@ -28,7 +28,7 @@ export default class PageId {
 	}
 
 	getLink() {
-		return `/content/${this._topic}/${this._page}`;
+		return  encodeURI(encodeURI(`/content/${this._topic}/${this._page}`));
 	}
 
 }
