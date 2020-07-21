@@ -10,6 +10,12 @@ const rootFilesNames = {
 	DEMO: "demo.md"
 };
 
+/**
+ * Naming Rules:
+ * - Names should follow the pattern: <number>-<name>.md
+ * - <name> can't contain the '-' symbol
+ */
+
 const TOPICS_DIR_PATH = 'content/topics';
 const contentDirectory = path.join(process.cwd(), TOPICS_DIR_PATH)
 
@@ -22,24 +28,20 @@ export async function getTopicPages(topic: string): Promise<{ topic: string, pag
 	const topicPagesArr: { topic: string, page: string }[] = [];
 	const topicDir = path.join(contentDirectory, topic);
 	const pages = fs.readdirSync(topicDir);
+	const sortedPages = pages.sort((a, b) => {
+		if (a < b)
+			return -1;
+		if (a > b)
+			return 1;
+		return 0;
+	});
+
 	for (let page of pages) {
-		page = page.replace(/\.md$/, '');
+		page = page.replace(/[0-9]+-/, '').replace(/\.md$/, '');
 		topicPagesArr.push({ topic, page });
 	}
 
-	return topicPagesArr.sort((a, b) => {
-		const aPage = a.page;
-		const bPage = b.page;
-		if (aPage == "introduction") return -1;
-		if (bPage == "introduction") return 1;
-		if (aPage < bPage) {
-			return -1;
-		}
-		if (aPage > bPage) {
-			return 1;
-		}
-		return 0;
-	});
+	return topicPagesArr
 }
 
 export function getAllContentIds() {
@@ -52,7 +54,7 @@ export function getAllContentIds() {
 			return {
 				params: {
 					topic: topicName,
-					page: fileName.replace(/\.md$/, '')
+					page: fileName.replace(/[0-9]+-/, '').replace(/\.md$/, ''),
 				}
 			}
 		})
@@ -64,8 +66,17 @@ export function getAllContentIds() {
 
 export async function getContentData(topic: string, page: string) {
 	// Load introduction if is topic root path
-
-	const fullPath = path.join(contentDirectory, `${topic}/${page}.md`)
+	const topicDir = path.join(contentDirectory, topic);
+	const pages = fs.readdirSync(topicDir);
+	
+	for (const currPage of pages) {
+		if (currPage.replace(/\.md$/, '').split('-')[1] === page) {
+			page = currPage;
+			break;
+		}
+	}
+	
+	const fullPath = path.join(contentDirectory, `${topic}/${page}`)
 	const fileContents = fs.readFileSync(fullPath, 'utf8')
 
 	// Use gray-matter to parse the post metadata section

@@ -32,5 +32,5 @@ export default function ContentSidebar({
 }
 
 const isSamePage = (page: string, activePage: string) => {
-  return activePage === page.split("/")[page.split("/").length-1];
+  return activePage.replace(/\.md$/, '').split('-')[1] === page;
 };

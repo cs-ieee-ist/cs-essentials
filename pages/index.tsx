@@ -32,7 +32,7 @@ export default function Home({
       </section>
       <section className={`${layoutStyles.homeCards} ${utilStyles.padding1px}`}>
         {contentTopics.map((name) => (
-          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}/content/${name}/introduction`} key={name}>
+          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}/content/${name}/Introduction`} key={name}>
             <a>
               <HomeCard
                 name={name}
