@@ -5,7 +5,7 @@ export default class PageId {
 
 	constructor(topic: string, page: string) {
 		this._topic = topic;
-		this._page = page;
+		this._page = page.replace(/[0-9]+-/, '').replace(/\.md$/, '');
 		this._title = PageId.createTitle(topic, page);
 	}
 
