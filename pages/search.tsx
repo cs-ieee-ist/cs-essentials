@@ -1,5 +1,5 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import { getPages } from "../lib/content";
 import { GetStaticProps } from "next";
 import styles from "../components/layout.module.css";
@@ -8,6 +8,7 @@ import { useRouter } from "next/router";
 import { search } from "../lib/stringSearch";
 import SearchCard from "../components/cards/searchCard";
 import PageId from "../models/pageId";
+import SiteConstants from "../constants/siteConstants";
 
 export default function Search({ pages }: { pages: {topic: string, page: string}[] }) {
 	const router = useRouter();
@@ -21,7 +22,7 @@ export default function Search({ pages }: { pages: {topic: string, page: string}
 	return (
 		<Layout>
 			<Head>
-				<title>{"Search - " + siteTitle}</title>
+				<title>{"Search - " + SiteConstants.COMPLETE_TITLE}</title>
 			</Head>
 			<div className={styles.contentContainer}>
 				{resultPages.map((value) => {

@@ -1,15 +1,16 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import Layout from "../components/layout";
 import { getDemoContent } from "../lib/content";
 import ContentCard from "../components/cards/contentCard";
 import styles from "../components/layout.module.css";
 import { GetStaticProps } from "next";
+import SiteConstants from "../constants/siteConstants";
 
 export default function Demo({ content }: { content: string }) {
 	return (
 		<Layout>
 			<Head>
-				<title>{siteTitle}</title>
+				<title>{SiteConstants.COMPLETE_TITLE}</title>
 			</Head>
 			<div className={styles.contentContainer}>
 				<ContentCard>

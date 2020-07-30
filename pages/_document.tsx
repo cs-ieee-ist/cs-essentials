@@ -1,4 +1,5 @@
 import Document, { Html, Head, Main, NextScript } from 'next/document'
+import SiteConstants from '../constants/siteConstants'
 
 class CustomDocument extends Document {
 	static async getInitialProps(ctx) {
@@ -10,6 +11,7 @@ class CustomDocument extends Document {
 		return (
 			<Html lang="en">
 				<Head>
+					<meta name="description" content={SiteConstants.DESCRIPTION} />
 				</Head>
 				<body>
 					<Main />
