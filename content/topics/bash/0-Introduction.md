@@ -13,7 +13,7 @@ First thing first, we need to open a terminal, most Linux systems use the same d
 Now that you have the terminal open we can start understanding what we are seeing.
 You should have something like this:
 
-```bash
+```shell
 username@computer:~ $
 ```
 
@@ -24,7 +24,7 @@ Before the ":" we have the computer name and username. After the ":" we have two
 
 Let's write our first command. Write `pwd` and press ENTER.
 
-```bash
+```shell
 ~ $ pwd
 /home/YOUR_USERNAME
 ```
@@ -35,7 +35,7 @@ The pwd prints the name of current/working directory. This should comply with wh
 
 One very useful command is the "man" command which is the system's manual pager. This is very useful to understand what a program, utility or function can do. Whenever you want to know more about a certain command just write "man THE_COMMAND", for example:
 
-```bash
+```shell
 ~ $ man pwd
 ```
 
@@ -45,14 +45,14 @@ The result will be a page with some information about the "pwd" and what it can 
 
 To list the content inside a directory we use the "ls" command. To use it we just need to write the directory path as an argument. But, when we just want to list the content inside the current directory we can omit the path and write just the command name ls, example: 
 
-```bash
+```shell
 ~ $ ls
 ~ $ ls /home
 ```
 
 If we add the flag "-a" to the command, example:
 
-```bash
+```shell
 ~ $ ls -a
 ```
 
@@ -62,7 +62,7 @@ Know we can see files that start with ".", and that usually are ignored. Includi
 
 To change the current directory (folder) we use the "cd" command. To use it we pass as an argument the path of the directory we want to go. If we don't give any path it will go to the HOME directory. 
 
-```bash
+```shell
 ~ $ cd /
 / $ ls
 / $ cd ~
@@ -71,7 +71,7 @@ To change the current directory (folder) we use the "cd" command. To use it we p
 
 We can also use the special folder "." and "..", although the "." will not do anything:
 
-```bash
+```shell
 ~ $ cd .
 ~ $ cd ..
 /home $
@@ -81,7 +81,7 @@ We can also use the special folder "." and "..", although the "." will not do an
 
 To create a new directory (folder) we use the "mkdir" command. 
 
-```bash
+```shell
 ~ $ mkdir /tmp/cs-essentials
 ~ $ cd /tmp/cs-essentials
 /tmp/cs-essentials $
@@ -91,7 +91,7 @@ To create a new directory (folder) we use the "mkdir" command.
 
 To create a new file we can use a lot of commands. We will show only two ways of doing it. The first is redirecting the output of a command to a file. To know more about how this works you can read the IO Redirection page. 
 
-```bash
+```shell
 /tmp/cs-essentials $ echo "Hello" > file1.txt
 /tmp/cs-essentials $ ls > file2.txt
 ```
@@ -100,7 +100,7 @@ The echo command usually would display "Hello" on the terminal, and the ls would
 
 Another way to create a file is by using the "touch" command. This command basically updates the access and modification times of each FILE to the current time. Although if the FILE argument does not exist it is created empty, example:
 
-```bash
+```shell
 /tmp/cs-essentials $ touch file3.txt
 ```
 
@@ -108,7 +108,7 @@ Another way to create a file is by using the "touch" command. This command basic
 
 To read a file with the terminal we use the "cat" command. This command will concatenate all the files given as arguments and print them on the terminal.
 
-```bash
+```shell
 /tmp/cs-essentials $ cat file1.txt
 ```
 
@@ -116,7 +116,7 @@ To read a file with the terminal we use the "cat" command. This command will con
 
 To move a file from a directory to another we use the "mv" command. This command receives two arguments, the source file path and the destination file path, the path can be relative or absolute, example: 
 
-```bash
+```shell
 /tmp/cs-essentials $ mv file1.txt /tmp/file1.txt
 /tmp/cs-essentials $ cd /tmp
 /tmp $ ls
@@ -127,7 +127,7 @@ To move a file from a directory to another we use the "mv" command. This command
 
 To rename a file we also use the "mv" command.
 
-```bash
+```shell
 /tmp $ mv file1.txt file111.txt
 /tmp $ ls
 /tmp $ cat file111.txt
@@ -137,18 +137,18 @@ To rename a file we also use the "mv" command.
 
 Before we introduce the "rm" command we would like to give a warning. Unlike GUI (graphical user interfaces), the "rm" command doesn't move files to a folder called "Trash". It will delete the files/directories completely from your system. Be very careful using this command. Always make sure that the parameters you use with "rm" command are correct. With some practice, it will become easier to use it but at the beginning, we recommend that you use the flag '-i' which will prompt you to confirm the action, example:
 
-```bash
+```shell
 /tmp $ rm -i file1.txt
 ```
 
 To delete a file we use the "rm" command. This command receives the path, absolute or relative, of the file we want to delete.
 
-```bash
+```shell
 /tmp $ rm -i file1.txt
 ```
 
 To delete a directory we need to add the flag "-r", which stands for *recursive*. With this flag, the "rm" command will remove directories and their contents recursively.
 
-```bash
+```shell
 /tmp $ rm -ri cs-essentials
 ```

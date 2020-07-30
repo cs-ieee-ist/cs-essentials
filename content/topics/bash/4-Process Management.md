@@ -6,11 +6,11 @@
 
 Imagine that you want to execute a command, but you want to keep using the prompt. To do that you need to execute the command like this:
 
-```bash
-someDirectory $ command1 &
+```shell
+$ command1 &
 [1] 1234
 
-someDirectory $ 
+$ 
 ```
 The command1 will run in the background and the process id (PID) is 1234.
 
@@ -18,8 +18,8 @@ The command1 will run in the background and the process id (PID) is 1234.
 
 To list the processes running at your machine we can use the "ps" command.
 
-```bash
-someDirectory $ ps
+```shell
+$ ps
   PID TTY          TIME CMD
     8 tty1     00:00:00 bash
  1383 tty1     00:00:00 ps
@@ -29,8 +29,8 @@ someDirectory $ ps
 
 To kill a process currently running we can use the "kill" command
 
-```bash
-someDirectory $ kill 1234
+```shell
+$ kill 1234
 [2]+ Terminated command1
 ``` 
 
@@ -48,11 +48,11 @@ The "kill" command sends signals to processes. And there is a variety of signals
 
 Run command1 and if succeeds, then, run command2 
 
-```bash
+```shell
 command1 && command2
 ```
 
 Run command2 if, and only if, command1 fails
-```bash
+```shell
 command1 || command2
 ```

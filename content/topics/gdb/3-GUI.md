@@ -41,16 +41,16 @@ int main() {
 
 Compile and run:
 
-```bash
-~ $ gcc -g hello.c
-~ $ ./a.out
+```shell
+$ gcc -g hello.c
+$ ./a.out
 Hello World
 ```
 
 Start GDB:
 
 ```bash
-~ $ gdb -tui ./a.out
+$ gdb -tui ./a.out
 ```
 
 You will see that you have the same GDB layout with the prompt but now you also have a big rectangle at the top. This is where all the information will be shown, for example, the source code or the executable disassembled. To show the source code you can run the following command:

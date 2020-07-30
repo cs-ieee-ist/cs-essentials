@@ -18,13 +18,13 @@ And each group has the same three privilege definitions:
 
 To see the permissions assigned to a file we can use the ls command with the -l flag. Example:
 
-```bash
-someDirectory $ ls -l /bin/bash
+```shell
+$ ls -l /bin/bash
 -rwxr-xr-x 1 root root 1183448 Feb 25 12:03 /bin/bash
 ```
 
 The output follows this pattern:
-```bash
+```shell
 -rwxr-xr-x 1 root root 1183448 Feb 25 12:03 /bin/bash
 ^+-+   +-+ ^   ^    ^     ^    +----------+ +-------+
 | | +-+ |  |   |    |     |         |           |
@@ -52,7 +52,7 @@ Here we can see:
 
 To change the file's permissions we can use the 'chmod' command which stands for 'change mode'. This command allows us to set the permissions (read, write, execute) of a file for the owner, group and the everyone else.
 
-```bash
+```shell
 chmod permissions filename
 ```
 
@@ -76,7 +76,7 @@ In this mode, file permissions are not represented as characters but as a three-
 
 Now imagine that you want to set the permissions of a file so that only you can read, write, and execute and the members of the group can read it. To do that you will need to run the following command:
 
-```bash
+```shell
 chmod 740 someFile
 ```
 
@@ -101,16 +101,16 @@ Examples:
 
 * Setting permissions to all users
 
-```bash
+```shell
 chmod a=rwx someFile
 ```
 * Adding permissions to the owner
 
-```bash
+```shell
 chmod u+x someFile
 ```
 * Removing permissions to the group
 
-```bash
+```shell
 chmod g-rw someFile
 ```

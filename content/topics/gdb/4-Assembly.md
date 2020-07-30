@@ -33,28 +33,28 @@ int main() {
 
 **Compile and open GDB**
 
-```bash
-~ $ gcc -g hello.c
-~ $ gdb ./a.out
+```shell
+$ gcc -g hello.c
+$ gdb ./a.out
 ```
 
 **Start execution**
 
-```bash
+```shell
 (gdb) b main
 (gdb) r
 ```
 
 So far everything we have done is just the usual setup. Now we want to start analysing the machine code. You can find the Assembly code specific commands at the table above. To start let's display the start and end memory position of the current line. 
 
-```bash
+```shell
 (gdb) info line
 Line 3 of "hello.c" starts at address 0x8001149 <main> and ends at 0x8001155 <main+12>.
 ```
 
 We can also display the compiled code that corresponds to the "main" function.
 
-```bash
+```shell
 (gdb) disassemble
 => 0x0000000008001149 <+0>:     endbr64
    0x000000000800114d <+4>:     push   %rbp
@@ -74,7 +74,7 @@ We can also display the compiled code that corresponds to the "main" function.
 
 Now we can follow the execution one instruction at a time using the "stepi" command.
 
-```bash
+```shell
 (gdb) stepi
 (gdb) disassemble
    0x0000000008001149 <+0>:     endbr64
@@ -95,7 +95,7 @@ Now we can follow the execution one instruction at a time using the "stepi" comm
 
 To finish we can set a new breakpoint at the line where we add plus 2 to the "a" variable and watch the value at the memory address change.
 
-```bash
+```shell
 (gdb) b 5
 (gdb) c
 (gdb) p &a
