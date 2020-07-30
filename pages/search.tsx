@@ -10,7 +10,7 @@ import SearchCard from "../components/cards/searchCard";
 import PageId from "../models/pageId";
 import SiteConstants from "../constants/siteConstants";
 
-export default function Search({ pages }: { pages: {topic: string, page: string}[] }) {
+export default function Search({ pages }: { pages: { topic: string, page: string }[] }) {
 	const router = useRouter();
 	let nColor = 0;
 	const MAX_COLOR = 7;
@@ -25,15 +25,18 @@ export default function Search({ pages }: { pages: {topic: string, page: string}
 				<title>{"Search - " + SiteConstants.COMPLETE_TITLE}</title>
 			</Head>
 			<div className={styles.contentContainer}>
-				{resultPages.map((value) => {
-					return (
-						<SearchCard
-							page={value.page}
-							key={value.page.getTitle()}
-							color={`backColor${(nColor = (nColor % MAX_COLOR) + 1)}`}
-						/>
-					);
-				})}
+				<div className={styles.searchResults}>
+					<div className={styles.searchResultsTitle}>Search Results</div>
+					{resultPages.map((value) => {
+						return (
+							<SearchCard
+								page={value.page}
+								key={value.page.getTitle()}
+								color={`backColor${(nColor = (nColor % MAX_COLOR) + 1)}`}
+							/>
+						);
+					})}
+				</div>
 			</div>
 		</Layout>
 	);
