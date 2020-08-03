@@ -1,5 +1,6 @@
 import Head from "next/head";
-import Layout, { siteTitle } from "../components/layout";
+import SiteConstants from "../constants/siteConstants";
+import Layout from "../components/layout";
 import utilStyles from "../styles/utils.module.css";
 import layoutStyles from "../components/layout.module.css";
 import { getContentTopics } from "../lib/content";
@@ -18,13 +19,12 @@ export default function Home({
   return (
     <Layout home>
       <Head>
-        <title>{siteTitle}</title>
+        <title>{SiteConstants.COMPLETE_TITLE}</title>
       </Head>
       <section className={utilStyles.jumbotron}>
-        <h1 className={utilStyles.heading2Xl}>CS Essentials</h1>
+        <h1 className={utilStyles.heading2Xl}>{SiteConstants.TITLE}</h1>
         <h4 className={utilStyles.headingMd}>
-          A repository that helps students, from any area, learn and practice
-          with CS-related tools. To contribute to the project go to{" "}
+          {SiteConstants.BRIEF_INTRO}
           <a href="https://github.com/cs-ieee-ist/cs-essentials">
             GitHub
           </a>
@@ -32,7 +32,7 @@ export default function Home({
       </section>
       <section className={`${layoutStyles.homeCards} ${utilStyles.padding1px}`}>
         {contentTopics.map((name) => (
-          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}/content/${name}/introduction`} key={name}>
+          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}/content/${name}/Introduction`} key={name}>
             <a>
               <HomeCard
                 name={name}

@@ -2,8 +2,7 @@ import Head from "next/head";
 import styles from "./layout.module.css";
 import Header from "../components/header";
 import Link from "next/link";
-
-export const siteTitle = "CS Essentials by IEEE-IST CS";
+import SiteConstants from "../constants/siteConstants";
 
 export default function Layout({
 	children,
@@ -20,10 +19,10 @@ export default function Layout({
 				<meta
 					property="og:image"
 					content={`https://og-image.now.sh/${encodeURI(
-						siteTitle
+						SiteConstants.COMPLETE_TITLE
 					)}.png?theme=light&md=0&fontSize=75px&images=https%3A%2F%2Fassets.zeit.co%2Fimage%2Fupload%2Ffront%2Fassets%2Fdesign%2Fnextjs-black-logo.svg`}
 				/>
-				<meta name="og:title" content={siteTitle} />
+				<meta name="og:title" content={SiteConstants.COMPLETE_TITLE} />
 				<meta name="twitter:card" content="summary_large_image" />
 			</Head>
 			<Header />
@@ -45,7 +44,7 @@ export default function Layout({
 				<main>{children}</main>
 			</div>
 			<footer className={styles.footer}>
-				<span className={styles.footerTitle}>{siteTitle}</span>
+				<span className={styles.footerTitle}>{SiteConstants.COMPLETE_TITLE}</span>
 			</footer>
 		</div>
 	);

@@ -64,24 +64,16 @@
 }
 
 .searchCard {
-	width: 540px;
+	width: 100%;
 	height: 50px;
-	margin: 0 auto 14px;
+	margin: 0 auto;
 	background-color: var(--white);
-	border: 1px solid var(--primary-dark);
-	border-radius: 8px;
 	display: flex;
-	overflow: hidden;
 	cursor: pointer;
 }
 
 .searchCard:hover {
-	box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
-}
-
-.searchCardColor {
-	width: 50px;
-	height: 100%;
+	background-color: #f7f7f7;
 }
 
 .searchCardTitle {
@@ -91,6 +83,31 @@
 	text-transform: capitalize;
 	color: #212121;
 	flex: 1;
+}
+
+.searchCardTitle:before {
+	content: "•";
+	color: #555;
+	margin-right: 16px;
+	font-size: 1.1rem;
+  padding-bottom: 1px;
+}
+
+.searchCard:hover .searchCardTitle:before {
+	color: var(--accent);
+}
+
+.searchCardTopic {
+	padding-right: 6px;
+}
+
+.searchCardTopic::after {
+	content: " - ";
+}
+
+.searchCardPage {
+	font-size: 0.9rem;
+	color: var(--gray);
 }
 
 .contentCard {
