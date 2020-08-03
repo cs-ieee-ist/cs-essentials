@@ -1,8 +1,8 @@
 # Git - Branching
 
-A branch is a line of development which you can use to do some work without messing with the main line, for example, the master branch. You can think of a branch as a new working directory that diverges from the original directory when you create it. Or, if you like it better, you can think of a branch as a pointer for a commit.
+A branch is a line of development which you can use to do some work without messing with the mainline, for example, the master branch. You can think of a branch as a new working directory that diverges from the original directory when you create it. Or, if you like it better, you can think of a branch as a pointer for a commit.
 
-You can read the [Book](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) for more in depth information
+You can read the [Book](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) for more in-depth information
 
 
 ## Start project
@@ -16,7 +16,7 @@ $ git add *
 $ git commit -m "first commit"
 ```
 
-## Create first Branch
+## Create a Branch
 
 To create a branch we user the `git branch <branch-name>` command:
 
@@ -55,11 +55,11 @@ $ git commit -m "add Contributing.md"
 
 ## Merge
 
-So, we have made all the changes we wanted without interfiring with the work being made at the `master`. But now we want to merge these new changes. To do that we use the `git merge <branch-name>` command, this command will merge the histories of the current branch and the branch specified at the command and save it in the current branch's history. So, we are going to switch to the `master` and then merge the `contribute`.
+So, we have made all the changes we wanted without interfering with the work being made at the `master`. But now we want to merge these new changes. To do that we use the `git merge <branch-name>` command, this command will merge the histories of the current branch and the branch specified at the command and save it in the current branch's history. So, we are going to switch to the `master` and then merge the `contribute`.
 
 ```shell
 $ git checkout master
 $ git merge contribute
 ```
 
-You can read the [Book](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) for more in depth information
+You can read the [Book](https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell) for more in-depth information

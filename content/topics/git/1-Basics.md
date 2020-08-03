@@ -1,7 +1,5 @@
 # Git - Basics
 
-In this page we are going to initialize a repository.
-
 ## Start Repository
 
 Typically to start a repository you can do two things:
@@ -11,7 +9,7 @@ Typically to start a repository you can do two things:
 
 ### Create a Repository from a Directory
 
-First we need to go to the project's directory.
+First, we need to go to the project's directory.
 
 ```bash
 $ cd /home/user/my_project
@@ -23,7 +21,7 @@ To create a repository we just need to type the following:
 $ git init
 ```
 
-This created a new subdirectory named `.git`, this contains all of necessary files for the Git repository. See [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain#ch10-git-internals) for more information about exactly what files are contained in the .git directory you just created.
+This created a new subdirectory named `.git`, this contains all of the necessary files for the Git repository. See [Git Internals](https://git-scm.com/book/en/v2/Git-Internals-Plumbing-and-Porcelain#ch10-git-internals) for more information about exactly what files are contained in the .git directory you just created.
 
 **Track a file**
 
@@ -43,7 +41,7 @@ $ git commit -m 'First commit'
 Congrats you just created your first repository.
 
 ### Cloning an Existing Repository
-If you want to get a copy of an existing Git repository, for example, [CS Essentials](https://github.com/cs-ieee-ist/cs-essentials), the command you need is `git clone <url>`. 
+If you want to get a copy of an existing Git repository, for example, [CS Essentials](https://github.com/cs-ieee-ist/cs-essentials), the command you need is `git clone <url>`. 
 
 ```bash
 $ git clone https://github.com/cs-ieee-ist/cs-essentials.git
@@ -53,7 +51,7 @@ This creates a directory named `cs-essentials`, with a .git directory already in
 
 ## Record Changes
 
-Now that we have a new repository we can start making changes. Each file in the your working directory can be in one of two states:
+Now that we have a new repository we can start making changes. Each file in your working directory can be in one of two states:
 
 * **Tracked** - files that were in the last snapshot
 * **Untracked** - files in your working directory that were not in your last snapshot and are not in your staging area
@@ -71,7 +69,7 @@ Your branch is up-to-date with 'origin/master'.
 nothing to commit, working directory clean
 ```
 
-Imagine that you just added two new files to the project, for example a `README.md` and a `CONTRIBUTING.md`, and you run the status command after that:
+Imagine that you just added two new files to the project, for example, a `README.md` and a `CONTRIBUTING.md`, and you run the status command after that:
 
 ```bash
 $ echo 'My Project' > README.md
@@ -81,7 +79,7 @@ On branch master
 Your branch is up-to-date with 'origin/master'.
 Untracked files:
   (use "git add <file>..." to include in what will be committed)
-		CONTRIBUTING.md
+    CONTRIBUTING.md
     README.md
 
 nothing added to commit but untracked files present (use "git add" to track)
@@ -110,7 +108,7 @@ Changes to be committed:
         new file:   README.md
 ```
 
-Both files are now staged. But what happens when we modify one of them and run the status command after, for example the `CONTRIBUTING.md`:
+Both files are now staged. But what happens when we modify one of them and run the status command after, for example, the `CONTRIBUTING.md`:
 
 ```bash
  echo "- Introduction" >> CONTRIBUTING.md
@@ -142,8 +140,8 @@ Now that we have made all the changes we wanted and they are all staged, we can 
 $ git commit -m "first commit"
 ```
 
-The `-m` flag allows us to type the commit message inline, otherwise an Editor would show up.
+The `-m` flag allows us to type the commit message inline, otherwise, an Editor would show up.
 
 
-You can read the [Book](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) for more in depth information
+You can read the [Book](https://git-scm.com/book/en/v2/Git-Basics-Recording-Changes-to-the-Repository) for more in-depth information
 
