@@ -1,4 +1,4 @@
-# Bash - Customization (.bashrc)
+# Terminal (Bash) - Customization (.bashrc)
 
 Every time you create a new terminal the code at the file .bashrc is executed. This allows us to run commands add or change variables and do other types of things.
 

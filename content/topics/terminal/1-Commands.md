@@ -1,4 +1,4 @@
-# Bash - Commands
+# Terminal (Bash) - Commands
 
 
 What is a command

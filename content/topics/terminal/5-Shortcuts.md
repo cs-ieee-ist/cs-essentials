@@ -1,4 +1,4 @@
-# Bash - Shortcuts
+# Terminal (Bash) - Shortcuts
 
 ### Navigation
 | Shortcut | Description |

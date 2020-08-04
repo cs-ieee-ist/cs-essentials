@@ -1,4 +1,4 @@
-# Bash - IO Redirection
+# Terminal (Bash) - IO Redirection
 
 ## Standard Output (stdout)
 

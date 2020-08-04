@@ -1,4 +1,4 @@
-# Bash - Permissions
+# Terminal (Bash) - Permissions
 
 The Unix based operating systems, offer a multi-user capability. This means that more than one user can use the same computer at the same time. To protect the users from each was created a permission method to only allow certain users to read, write or execute a certain file.
 

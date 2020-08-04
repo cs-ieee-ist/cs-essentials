@@ -1,6 +1,6 @@
-# Bash - Introduction
+# Terminal (Bash) - Introduction
 
-A command line is a text interface to your computer, you may find it on multiple occasions referred to as the shell, terminal, console, prompt. When looking for the first time it can look complex and confusing. Yet it is a fundamental tool the user to be more productive and even perform actions that the GUI don't offer.
+A terminal is a text interface to your computer, you may find it on multiple occasions referred to as the shell, command line, console, prompt. When looking for the first time it can look complex and confusing. Yet it is a fundamental tool the user to be more productive and even perform actions that the GUI don't offer.
 
 Bash is a POSIX-compliant shell that allows the user to perform a set of actions in his system. Bash is like all other Unix shells, and it supports filename globbing (wildcard matching), piping, here documents, command substitution, variables, and control structures for condition-testing and iteration. Bash is also command language, but that is a whole different topic.
 

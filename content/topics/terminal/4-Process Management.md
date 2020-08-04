@@ -1,4 +1,4 @@
-# Bash - Process Management and Conditional execution
+# Terminal (Bash) - Process Management and Conditional execution
 
 ## Process Management
 
