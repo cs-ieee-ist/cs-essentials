@@ -34,25 +34,20 @@
 }
 
 .headerSearch {
-	justify-content: center;
-	display: flex;
-	margin: auto;
-}
-
-.headerSearch {
 	width: 370px;
-	font-size: 0.9rem;
-	align-self: center;
 	display: flex;
+	align-self: center;
+	margin: auto;
 	border: none;
-	background-color: #e0e0e0;
+	background-color: #ececec;
 	border-radius: 6px;
-	transition: box-shadow 0.2s ease;
+	transition: box-shadow 0.1s ease;
+	font-size: 0.9rem;
 	overflow: hidden;
+	justify-content: center;
 }
 
 .headerSearch:hover {
-	background-color: #e6e6e6;
 	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 }
 
@@ -207,7 +202,7 @@
 }
 
 .sidebarItem:hover {
-	background-color: rgba(0, 0, 0, 0.05);
+	background-color: rgba(0, 0, 0, 0.03);
 }
 
 .sidebarItem::before {

@@ -49,6 +49,11 @@ code {
   border-radius: 6px;
 }
 
+table  code {
+  background: #fff;
+  padding: 4px;
+}
+
 pre {
   color: #fff;
 }

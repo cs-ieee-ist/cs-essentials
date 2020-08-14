@@ -36,6 +36,7 @@
 	border: 1px solid #c3c3c3;
 	border-radius: 12px;
 	background-color: var(--white);
+	color: #212121;
 	padding: 24px;
 	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 	flex: 1;
@@ -110,10 +111,6 @@
 	color: var(--gray);
 }
 
-.contentCard {
-	color: #212121;
-}
-
 .contentCard h1 {
 	font-size: 1.35rem;
 }
@@ -144,28 +141,29 @@
 }
 
 .contentCard table {
-	width: 100%;
-	font-size: 0.8rem;
-	background-color: #282a36;
-	color: #f8f8f2;
-	border-radius: 2px;
-	border-collapse: collapse;
+	width: 100% ;
+  font-size: .8rem;
+  background-color: #f1f1f1;
+  color: #333;
+  border-collapse: collapse;
+  border-color: #002c52;
+  border-spacing: 0;
 	overflow: hidden;
 }
 
-.contentCard td, .contentCard th {
-	border: 1px solid #4f5465;
-	padding: 8px 14px;
-}
-
-.contentCard tbody tr:hover {
-	background-color: rgba(255, 255, 255, 0.05);
+.contentCard td {
+	border-bottom: 1px solid var(--accent-light);
+	padding: 6px 14px;
 }
 
 .contentCard th {
-	padding-top: 12px;
-	padding-bottom: 12px;
+	border-bottom: 2px solid var(--accent);
+	padding: 8px 6px;
 	text-align: center;
+}
+
+.contentCard tbody tr:hover {
+	background-color: hsl(0 0% 100% / 0.2);
 }
 
 @media screen and (max-width: 750px) {
