@@ -126,6 +126,8 @@ Example:
 
 ### Tables with values
 
+**Text Format**
+
 | Value | Text Format |
 | ------ | ----------- |
 | 0 | Normal Text | 
@@ -135,6 +137,8 @@ Example:
 | 5 | Blinking Text |
 | 7 | Reversed Text |
 | 8 | Hidden Text |
+
+**Color**
 
 | Value | Color |
 | ------ | ----------- |
@@ -146,6 +150,8 @@ Example:
 | 35 | Purple |
 | 36 | Cyan |
 | 37 | White |
+
+**Background Color**
 
 | Value | Background Color |
 | ------ | ----------- |
