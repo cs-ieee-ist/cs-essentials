@@ -56,6 +56,27 @@ table  code {
 
 pre {
   color: #fff;
+  overflow-x: auto;
+}
+
+/* width */
+pre::-webkit-scrollbar {
+  height: 8px;
+}
+
+/* Track */
+pre::-webkit-scrollbar-track {
+  background: transparent; 
+}
+ 
+/* Handle */
+pre::-webkit-scrollbar-thumb {
+  background: rgb(255, 255, 255, 0.2); 
+}
+
+/* Handle on hover */
+pre::-webkit-scrollbar-thumb:hover {
+  background: rgba(121, 121, 121, 0.3); 
 }
 
 @media screen and (max-width: 750px) {
