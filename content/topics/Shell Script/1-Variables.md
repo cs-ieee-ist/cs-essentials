@@ -18,7 +18,7 @@ echo ${x} ${z}!${a}
 * To read the value inside the variable we need to use the symbol `$` before the variable's 
 * To avoid any possible ambiguities is good practice to use braces `{}` around the variable's name
 * Variables are typeless, and the shell by default treats them as strings
-* The default value of an variable is an empty string `""`, for example, the variable `a` above
+* The default value of a variable is an empty string `""`, for example, the variable `a` above
 
 ## Arithmetic
 
@@ -43,7 +43,7 @@ In many cases it might be usefull to define the variable outside the `.sh` file.
 echo $ONE + $TWO = $(($ONE + $TWO))
 ```
 
-These program will read two variables called `ONE`, and `TWO` and  will print the addition between the two. To define the two variables outside the program we use the command `export`.
+This program will read two variables called `ONE`, and `TWO` and will print the addition between the two. To define the two variables outside the program we use the command `export`.
 
 ```shell
 $ ONE=4
@@ -56,14 +56,14 @@ $ ./add.sh
 
 ## Special Variables
 
-The shell has a set of variables with its own purpose and some of them you cant reassign. They contain useful information, that you can use to know more about environment in which the script is running.
+The shell has a set of variables with its own purpose and some of them you cant reassign. They contain useful information, that you can use to know more about the environment in which the script is running.
 
 | Variable | Description |
 | ------- | ----------- |
 | $0  | Basename of the program |
 | $1 .. $9 | Arguments with which a script was invoked |
 | $* | All the arguments with which a script was invoked |
-| $@ | All the arguments with which a script was invoked, but each argument is single quoted |
+| $@ | All the arguments with which a script was invoked, but each argument is single-quoted |
 | $# | Number of arguments supplied to a script |
 | $? | The exit status of the last command executed |
 | $$ | The process number of the current shell |

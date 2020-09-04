@@ -12,7 +12,7 @@ hello () {
   echo "Hello World!"
 }
 
-# Invokation
+# Invocation
 hello
 ```
 
@@ -55,13 +55,13 @@ Functions can return a value in one of four different ways:
 
 ### Change Variables
 
-Like in Javascript (non strict mode) there is no scope of variables, with the exception of the parameters ($1, $2, $@, etc). This allow us to change and define variables inside the function wich can be usefull sometimes.
+Like in Javascript (non-strict mode) there is no scope of variables, except the parameters ($1, $2, $@, etc). This allows us to change and define variables inside the function which can be useful sometimes.
 
 ```bash
 #!/bin/bash
 
 hello () {
-	msg='Hello World!'
+  msg='Hello World!'
 }
 
 hello
@@ -110,7 +110,7 @@ fi
 
 ```shell
 $ ./example.sh
-General Kenoby
+General Kenobi
 ```
 
 **Useful Links:**

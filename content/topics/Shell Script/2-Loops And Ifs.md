@@ -2,7 +2,7 @@
 
 ## Loops
 
-Bash  supports serveral types of loops, e.g., for, while e until.
+Bash supports several types of loops, e.g., for, while e until.
 
 ### `for` loop
 
@@ -11,11 +11,11 @@ The for loops will iterate until through a set of values in a list.
 ```bash
 for i in $( ls )
 do
-	echo item: $i
+  echo item: $i
 done
 ```
 
-In this case the list is the result of executing the command `ls`, which returns the list of files and diretories in the current directory. And the for loop iterates over all results printing each step using `echo`. 
+In this case, the list is the result of executing the command `ls`, which returns the list of files and directories in the current directory. And the for loop iterates over all results printing each step using `echo`. 
 
 ### `while` loop
 
@@ -26,27 +26,27 @@ The while loop runs until the expression is false
 I=0
 while [ $I -lt 10 ]
 do
-	echo The counter is $I
+  echo The counter is $I
   let I=I+1 
 done
 ```
 
-In this case the we have a variable `I` that starts with the value 0 and a while loop that runs until the expression `I < 10` is false. 
+In this case, we have a variable `I` that starts with the value 0 and a while loop that runs until the expression `I < 10` is false. 
 
 ## Case
 
 ```bash
 do
   case $VAR in
-	val1)
-		echo "case val1"
-		;;
-	val2)
-		echo "case val2"
-		;;
-	*)
-	echo "Ups default result"
-	;;
+  val1)
+    echo "case val1"
+    ;;
+  val2)
+    echo "case val2"
+    ;;
+  *)
+  echo "Ups default result"
+  ;;
 esac
 ```
 
@@ -55,12 +55,12 @@ esac
 ```bash
 if [ $VAR == "hello" ]
 then
-	echo hi
+  echo hi
 elif [ $VAR == "hello there" ]
 then
-	echo General Kenoby
+  echo General Kenobi
 else
-	echo ...
+  echo ...
 fi
 ```
 
