@@ -24,7 +24,7 @@ The while loop runs until the expression is false
 ```bash
 #!/bin/bash 
 I=0
-while [  $I -lt 10 ]
+while [ $I -lt 10 ]
 do
 	echo The counter is $I
   let I=I+1 
