@@ -76,14 +76,14 @@
 }
 
 .backColor1 {
-  background-color: var(--primary-dark);
+  background-color: var(--primary);
 }
 
 .backColor2 {
-  background-color: var(--primary);
+  background-color: var(--primary-dark);
 }
 .backColor3 {
-  background-color: var(--primary-light);
+  background-color: var(--accent-light);
 }
 
 .backColor4 {
@@ -91,7 +91,7 @@
 }
 
 .backColor5 {
-  background-color: var(--accent-light);
+  background-color: var(--primary-light);
 }
 
 .backColor6 {
