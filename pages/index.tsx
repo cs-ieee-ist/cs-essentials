@@ -7,6 +7,7 @@ import { getContentTopics } from "../lib/content";
 import Link from "next/link";
 import { GetStaticProps } from "next";
 import HomeCard from "../components/cards/homeCard";
+import PageId from "../models/pageId";
 
 export default function Home({
   contentTopics,
@@ -32,7 +33,7 @@ export default function Home({
       </section>
       <section className={`${layoutStyles.homeCards} ${utilStyles.padding1px}`}>
         {contentTopics.map((name) => (
-          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}/content/${name}/Introduction`} key={name}>
+          <Link href={`${process.env.BACKEND_URL}/content/[topic]/[page]`} as={`${process.env.BACKEND_URL}${new PageId(name).getLink()}`} key={name}>
             <a>
               <HomeCard
                 name={name}

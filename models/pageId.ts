@@ -3,10 +3,13 @@ export default class PageId {
 	private _page: string;
 	private _title: string;
 
-	constructor(topic: string, page: string) {
+	constructor(topic: string, page?: string) {
 		this._topic = topic;
-		this._page = page.replace(/[0-9]+-/, '').replace(/\.md$/, '');
-		this._title = PageId.createTitle(topic, page);
+		if (page)
+			this._page = page.replace(/[0-9]+-/, '').replace(/\.md$/, '');
+		else
+			this._page = "Introduction";
+		this._title = PageId.createTitle(this._topic, this._page);
 	}
 
 	static createTitle(topic: string, page: string): string {
