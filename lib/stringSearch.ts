@@ -24,7 +24,6 @@ class Levenshtein {
 		return Math.max(i, j);
 	}
 
-	// TODO: investigate wasm implementation Rust or C++
 	lev(m: number, n: number) {
 		// source prefixes can be transformed into empty string by
 		// dropping all characters
