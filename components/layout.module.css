@@ -61,16 +61,12 @@
 
 .headerSearchBtn {
 	background-color: transparent;
-	width: 32px;
+	width: 34px;
 	padding: 0 8px;
 	display: flex;
 	border: none;
 	outline: none;
 	cursor: pointer;
-}
-
-.headerSearchBtn img {
-	color: var(--light-black);
 }
 
 .headerSearchBtn:hover {
@@ -81,6 +77,22 @@
 	background-color: var(--white);
 	box-shadow: 1px 1px 8px 0px rgba(0, 0, 0, 0.35);
 	border: 1px solid #cecece;
+}
+
+.headerSearch:active .headerSearchBtn, 
+.headerSearch:focus .headerSearchBtn, 
+.headerSearch:focus-within .headerSearchBtn {
+	background-color: var(--accent);
+}
+
+.headerSearch:active .headerSearchBtn:hover, 
+.headerSearch:focus .headerSearchBtn:hover, 
+.headerSearch:focus-within .headerSearchBtn:hover {
+	opacity: 0.9;
+}
+
+.headerSearch:active .headerSearchBtn img, .headerSearch:focus .headerSearchBtn img, .headerSearch:focus-within .headerSearchBtn img {
+	filter: invert(1);
 }
 
 .headerIcon {
