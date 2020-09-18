@@ -3,12 +3,13 @@
 ## What is this?
 CS Essentials is website that helps students learn and practice with CS-related tools, for example, Vim, Gdb, and Git. Our goal is to help students being more proficient and efficient when using these tools. This project was inspired by [The Missing Semester](https://missing.csail.mit.edu/) 
 
-## Who is this for?
-Anyone that seeks to learn more about CS-related tools. 
+### [Website](https://cs-ieee-ist.github.io/cs-essentials/)
 
 ## Contribute
 Contributions are more than welcome. See more at [CONTRIBUTING.md](CONTRIBUTING.md)
 
-## Built with
+## Credits
 
-* [Next.js](https://nextjs.org/)
+* The project is maintained by: [IEEE-IST Student Branch's Computer Society Chapter](https://ieee-ist.org/en/student-chapters/cs/)
+* Created with: [Next.js](https://nextjs.org/)
+* Hosted by: [Github Pages](https://pages.github.com/)
