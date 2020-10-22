@@ -12,6 +12,7 @@ class CustomDocument extends Document {
 			<Html lang="en">
 				<Head>
 					<meta name="description" content={SiteConstants.DESCRIPTION} />
+					<meta property="og:image" content={`${process.env.BACKEND_URL}/images/cs-essentials-thumb.png`} />
 				</Head>
 				<body>
 					<Main />
