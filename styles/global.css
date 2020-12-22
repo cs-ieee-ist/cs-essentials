@@ -1,8 +1,10 @@
-@import url("./code.css");
+@import url("./dracula.css");
+@import url("./googlecode.css") only print;
 
 :root {
   --light-black: #333;
   --gray: #707070;
+  --mid-gray: #aaa;
 	--light-gray: #f6f6f6;
 	--light-gray-2: #dcdcdc;
   --white: #fff;
@@ -89,4 +91,14 @@ pre::-webkit-scrollbar-thumb:hover {
 	html {
 		font-size: 14px;
 	}
+}
+
+
+@media print {
+  :root {  
+    --content-sidebar-width: 0;
+  }
+  code {
+    background-color: white;
+  }
 }

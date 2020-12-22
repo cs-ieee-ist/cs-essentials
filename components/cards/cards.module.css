@@ -118,6 +118,7 @@
 .contentCard h2 {
 	font-size: 1.1rem;
 	border-bottom: 1px solid var(--light-gray-2);
+	margin: 36px 0 16px;
 }
 
 .contentCard h3 {
@@ -177,4 +178,26 @@
 	.searchCard {
 		width: 100%;
 	}
+}
+
+@media print {
+	.contentCard {  
+		max-width: 100%;
+		border: none;
+    box-shadow: none;
+    border-radius: 0;
+	}
+	.contentCard::before {
+		display: none;
+	}
+	.contentCard pre {
+		margin: 0;
+		border: 1px solid var(--mid-gray);
+		page-break-inside: avoid;
+		overflow-x: hidden !important;
+	}
+	.contentCard h2, .contentCard h3 {
+		break-after: avoid;
+	}
+
 }

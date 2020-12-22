@@ -70,7 +70,7 @@
 }
 
 .headerSearchBtn:hover {
-	background-color: rgba(218, 188, 129, 0.3);
+	background-color: rgb(28, 66, 89, .3);
 }
 
 .headerSearch:active, .headerSearch:focus, .headerSearch:focus-within {
@@ -82,7 +82,7 @@
 .headerSearch:active .headerSearchBtn, 
 .headerSearch:focus .headerSearchBtn, 
 .headerSearch:focus-within .headerSearchBtn {
-	background-color: var(--accent);
+	background-color: var(--primary-dark);
 }
 
 .headerSearch:active .headerSearchBtn:hover, 
@@ -323,4 +323,17 @@
 	.contentContainer {
 		margin: 0 6px;
 	}
+}
+
+@media print {
+	.header, .backToHome, .contentSidebar {  
+    display: none;
+	}
+	.mainContent {
+		padding: 0;
+	}
+	.contentContainer {
+		margin: 0;
+	}
+
 }
