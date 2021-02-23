@@ -3,7 +3,7 @@
 .header {
 	position: relative;
 	display: flex;
-	height: 62px;
+	height: 52px;
 	flex-direction: row;
 	border-bottom: 1px solid var(--primary-dark);
 	background-color: var(--white);
@@ -180,6 +180,24 @@
 .contentSidebar {
 	width: var(--content-sidebar-width);
 	margin-top: 50px;
+}
+
+.editLink {
+	display: flex;
+    font-size: 16px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 0 0;
+    color: #212121;
+}
+
+.editLink img {
+	margin-right: 8px;
+	width: 24px;
+}
+
+.editLink:hover {
+	text-decoration: underline;
 }
 
 .sidebarList {
