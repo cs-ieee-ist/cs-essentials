@@ -29,6 +29,11 @@ export default function Header() {
 				<span className={`${styles.headerIcon} ${styles.headerSearchIcon}`} onClick={onSearchIconClick}>
 					<img src={`${process.env.BACKEND_URL}/icons/search.svg`} alt="search-icon" />
 				</span>
+				<Link href={`${process.env.GITHUB_URL}`}>
+					<a className={styles.headerIcon} target="_blank" rel="noopener noreferrer">
+						<img src={`${process.env.BACKEND_URL}/icons/logo--github.svg`} alt="info-icon" />
+					</a>
+				</Link>
 				<Link href={`${process.env.BACKEND_URL}/about`}>
 					<a className={styles.headerIcon}>
 						<img src={`${process.env.BACKEND_URL}/icons/information.svg`} alt="info-icon" />
