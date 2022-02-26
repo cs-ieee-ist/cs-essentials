@@ -31,7 +31,7 @@ export default class PageId {
 	}
 
 	getLink() {
-		return  encodeURI(encodeURI(`/content/${this._topic}/${this._page}`));
+		return encodeURI(`/content/${this._topic}/${this._page}`);
 	}
 
 }
