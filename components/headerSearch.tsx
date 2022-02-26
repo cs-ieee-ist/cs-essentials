@@ -14,15 +14,15 @@ export default function HeaderSearch() {
 
   const keyPressHandler = (event) => {
     if (event.key === "Enter")
-      router.push(`${process.env.BACKEND_URL}/search?query=${query}`);
+      router.push(`/search?query=${query}`);
   };
 
   return (
     <div className={styles.headerSearch}>
       <input placeholder="Search" onChange={inputChange} onKeyPress={keyPressHandler}></input>
-      <Link href={{ pathname: `${process.env.BACKEND_URL}/search`, query: { query: query } }}>
+      <Link href={{ pathname: `/search`, query: { query: query } }}>
         <a className={styles.headerSearchBtn}>
-          <img src={`${process.env.BACKEND_URL}/icons/search.svg`}></img>
+          <img src={`${process.env.BASE_PATH}/icons/search.svg`}></img>
         </a>
       </Link>
     </div>

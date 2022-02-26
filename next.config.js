@@ -1,9 +1,9 @@
-const prod = process.env.NODE_ENV === 'production';
 
 module.exports = {
+	basePath: '/cs-essentials',
 	env: {
 		GITHUB_CONTENT_URL:'https://github.com/cs-ieee-ist/cs-essentials/tree/master/content/topics',
 		GITHUB_URL:'https://github.com/cs-ieee-ist/cs-essentials/',
-		BACKEND_URL: prod ? '/cs-essentials' : '',
-	},
+		BASE_PATH: '/cs-essentials'
+	}
 }

@@ -14,11 +14,11 @@ export default function Header() {
 	return (
 		<header className={styles.header}>
 			<div className={styles.headerLeft}>
-				<Link href="/" as={`${process.env.BACKEND_URL}/`}>
+				<Link href="/" as={`/`}>
 					<a className={styles.headerLogoLink}>
 						<img
 							className={styles.headerLogo}
-							src={`${process.env.BACKEND_URL}/images/logo-cs.png`}
+							src={`${process.env.BASE_PATH}/images/logo-cs.png`}
 							alt="logo"
 						></img>
 					</a>
@@ -27,16 +27,16 @@ export default function Header() {
 			<HeaderSearch />
 			<div className={styles.headerRight}>
 				<span className={`${styles.headerIcon} ${styles.headerSearchIcon}`} onClick={onSearchIconClick}>
-					<img src={`${process.env.BACKEND_URL}/icons/search.svg`} alt="search-icon" />
+					<img src={`${process.env.BASE_PATH}/icons/search.svg`} alt="search-icon" />
 				</span>
 				<Link href={`${process.env.GITHUB_URL}`}>
 					<a className={styles.headerIcon} target="_blank" rel="noopener noreferrer">
-						<img src={`${process.env.BACKEND_URL}/icons/logo--github.svg`} alt="info-icon" />
+						<img src={`${process.env.BASE_PATH}/icons/logo--github.svg`} alt="info-icon" />
 					</a>
 				</Link>
-				<Link href={`${process.env.BACKEND_URL}/about`}>
+				<Link href={`/about`}>
 					<a className={styles.headerIcon}>
-						<img src={`${process.env.BACKEND_URL}/icons/information.svg`} alt="info-icon" />
+						<img src={`${process.env.BASE_PATH}/icons/information.svg`} alt="info-icon" />
 					</a>
 				</Link>
 			</div>

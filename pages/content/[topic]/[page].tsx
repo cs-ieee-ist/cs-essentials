@@ -41,7 +41,7 @@ export default function Content({
 							dangerouslySetInnerHTML={{ __html: contentData.contentHtml }}
 						/>
 						<a className={layoutStyles.editLink} href={`${process.env.GITHUB_CONTENT_URL}/${contentData.topic}/${contentData.page}`} target="_blank" rel="noreferrer noopener">
-							<img src={`${process.env.BACKEND_URL}/icons/edit.svg`} alt="edit-icon"></img>
+							<img src={`${process.env.BASE_PATH}/icons/edit.svg`} alt="edit-icon"></img>
 							Edit this page
 						</a>
 					</ContentCard>

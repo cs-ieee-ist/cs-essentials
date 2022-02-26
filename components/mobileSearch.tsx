@@ -13,7 +13,7 @@ export default function MobileSearch({onSearchClick}) {
 	return (
 		<div className={styles.mobileSearch}>
 			<input className={styles.mobileSearchInput} placeholder="Search" onChange={inputChange}></input>
-			<Link href={{ pathname: `${process.env.BACKEND_URL}/search`, query: { query: query } }} >
+			<Link href={{ pathname: `/search`, query: { query: query } }} >
         <a className={styles.mobileSearchBtn} onClick={onSearchClick}>
 				<span>Search</span>
         </a>

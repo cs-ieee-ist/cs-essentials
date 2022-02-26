@@ -30,9 +30,9 @@ export default function Layout({
 			<div className={styles.mainContent}>
 				{!home ? (
 					<div className={styles.backToHome}>
-						<Link href="/" as={`${process.env.BACKEND_URL}/`}>
+						<Link href="/" as={`/`}>
 							<a>
-								<img src={`${process.env.BACKEND_URL}/icons/chevron--left.svg`} alt="back-icon" />
+								<img src={`${process.env.BASE_PATH}/icons/chevron--left.svg`} alt="back-icon" />
 								<span>Back to Home</span>
 							</a>
 						</Link>
