@@ -21,7 +21,7 @@ Now you have an empty .vimrc file, in the following topic, we will help you crea
 
 ### Basics configs - Example
 
-```vim
+```
 " URL: http://vim.wikia.com/wiki/Example_vimrc
 " Authors: http://vim.wikia.com/wiki/Vim_on_Freenode
 " Description: A minimal, but feature-rich, example .vimrc. If you are a
@@ -207,7 +207,7 @@ vim -u NONE -c "helptags ~/.vim/pack/vendor/start/nerdtree/doc" -c q
 
 Launch Vim, and type this command:
 
-```vim
+```
 :NERDTree
 ```
 
@@ -262,7 +262,7 @@ Note that this section is not to discourage you to use plugins, the objective of
 If you want a fuzzy file search vim has git your back without a plugin!
 
 Add this to you .vimrc file
-```vim
+```
 path +=**
 ```
 This will allow vim so search for files in sub-directories and so on of a root directory.
@@ -292,26 +292,26 @@ topics
 For this, to work you have to start vim in the root directory (topics).
 Now you want to work in vim's movement.md file, you just type in vim the command:
 
-```vim
+```
 :find movement.md
 ```
 You can also tab so vim will know what file you are talking about and complete.
 
 If you tab and there is more than one match vim will present you with the various matches and you choose
 
-```vim
+```
 :find intro
 ```
 and then you tab, vim will present you the three possibilities introdution1.md, introdution2.md, introdution3.md. You can navigate in the choices that vims gives you with tabs.
 
 Back to our example, so we use **:find movement.md** and we are in /topics/vim/movement.md, now we want to work on secondBlob.md, but that file is in another directory it is in /topics/git/blobs/secondBlob.md, we can!!! That is why we started vim in the root directory topics. You just need to do 
 
-```vim
+```
 :find secontBlob.md
 ```
 This is a lot more powerful, like a normal fuzzy finder you can search using file types
 
-```vim
+```
 :find *.c
 ```
 

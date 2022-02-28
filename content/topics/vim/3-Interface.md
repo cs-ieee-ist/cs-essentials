@@ -37,7 +37,7 @@ When you use to delete, you just delete the word. When you change you delete the
 It's sometimes helpful to format text quickly, such as paragraphs, and this can easily be done with the following command:
 
 Formatting the current paragraph
-```vim
+```
 gq ap
 ```
 
@@ -124,18 +124,18 @@ Period allows you to repeat whatever it is that you just did.
 Let's see an example.
 
 First, we delete a word
-```vim
+```
 dw
 ```
 
 Delete seven more words
-```vim
+```
 7.
 ```
 
 Another example
 
-```vim
+```
 cw
 ```
 Then you type the change the word that you want, and you can use period to make that exact change to any other word.

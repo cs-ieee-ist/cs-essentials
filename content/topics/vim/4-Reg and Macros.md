@@ -64,12 +64,12 @@ In Vim, the word "macro" may refer to:
 Each register is identified by a letter a to z.
 
 To enter a macro, type:
-```vim
+```
 q<letter><commands>q
 ```
 To execute the macro <number> times (once by default), type:
 
-```vim
+```
 <number>@<letter>
 ```
 
@@ -137,7 +137,7 @@ After recording the macro. This just goes into one of the registers so you can p
 To save it you open up .vimrc and paste the contents, then the register will be around the next time you start vim.
 The format of the vimrc line should be:
 
-```vim
+```
 let @q = 'macro contents'
 ```
 

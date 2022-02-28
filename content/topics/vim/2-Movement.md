@@ -68,13 +68,13 @@ Once you've done your search, you can press ***n*** to go to the next instance o
 
  Jump forward and land on the < character
 
- ```vim
+ ```
  f<
  ```
  You can think of this as ***find*** which lands right on it.
 
 Jump forward and land right before the < character
-```vim
+```
 t<
 ```
 You can think of this as ***to*** which lands right before it.
