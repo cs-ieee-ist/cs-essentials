@@ -18,3 +18,4 @@ Contributions are more than welcome. See more at [CONTRIBUTING.md](CONTRIBUTING.
 
 * The website's content (/content) is licensed under the [CC-BY license](https://creativecommons.org/licenses/by/4.0/).
 * Source code is licensed under the [MIT license](https://opensource.org/licenses/MIT).
+
