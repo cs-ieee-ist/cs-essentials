@@ -8,6 +8,8 @@
 ## Run
 
 * `npm run dev`
+* Go to `http://localhost:1234/cs-essentials`
+
 
 ## Pull Request
 Before proposing a PR, please open an issue, where the feature or other type of change can be discussed. This help prevent duplicated work. 

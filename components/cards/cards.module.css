@@ -33,12 +33,11 @@
 	position: relative;
 	max-width: 650px;
 	margin: auto;
-	border: 1px solid #c3c3c3;
+	border: 1px solid var(--light-gray-2);
 	border-radius: 12px;
 	background-color: var(--white);
 	color: #212121;
 	padding: 24px;
-	box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.2);
 	flex: 1;
 	overflow: hidden;
 }
@@ -55,7 +54,7 @@
 	height: 6px;
 	left: 0;
 	top: 0;
-	background-color: var(--accent);
+	background-color: var(--primary-dark);
 }
 
 .contentArticle {}

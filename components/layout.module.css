@@ -12,7 +12,6 @@
 .headerLeft {
 	min-width: 150px;
 	padding: 12px;
-	width: 220px;
 	align-items: center;
 	display: flex;
 }
@@ -180,6 +179,7 @@
 .contentSidebar {
 	width: var(--content-sidebar-width);
 	margin-top: 50px;
+	margin-right: 8px;
 }
 
 .editLink {
@@ -211,7 +211,7 @@
 	align-items: center;
 	height: 34px;
 	margin: 2px 0;
-	font-size: 0.9rem;
+	font-size: 0.85rem;
 	line-height: 0.95rem;
 	text-transform: capitalize;
 }
@@ -223,6 +223,9 @@
 	flex-direction: column;
 	justify-content: center;
 	color: var(--light-black);
+	padding-left: 4px;
+	border: 1px solid transparent;
+	border-radius: 6px;
 }
 
 .active {}
@@ -231,22 +234,29 @@
 	font-weight: 600;
 }
 
-.sidebarItem:hover {
-	background-color: rgba(0, 0, 0, 0.03);
+.sidebarItem.active a {
+	border: 1px solid var(--primary-dark);
+	background-color: rgba(0, 0, 0, 0.05);
+}
+
+.sidebarItem:hover a {
+	border: 1px solid var(--light-gray-2);
+	background-color: rgba(0, 0, 0, 0.05);
 }
 
 .sidebarItem::before {
 	content: '';
 	display: inline-flex;
 	width: 4px;
-	height: 28px;
-	margin-right: 8px;
+	height: 26px;
+	margin-right: 4px;
+	border-radius: 50px;
 	vertical-align: -8px;
 	background-color: transparent;
 }
 
 .sidebarItem.active::before {
-	background-color: var(--accent);
+	background-color: var(--primary-dark);
 }
 
 .searchResults {
@@ -325,9 +335,6 @@
 	}
 	.contentSidebar {
 		width: 100%;
-	}
-	.sidebarItem.active {
-		background-color: rgba(0, 0, 0, 0.05);
 	}
 	.headerRight {
 		flex: 1;
